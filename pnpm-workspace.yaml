@@ -1,5 +1,2 @@
 packages:
-  - "client"
-  - "common"
-  - "eslint-common"
-  - "server"
+  - "packages/*"

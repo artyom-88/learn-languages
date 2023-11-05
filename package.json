@@ -24,6 +24,9 @@
     "update": "pnpm dlx npm-check-updates -i -u --root",
     "update:all": "pnpm dlx npm-check-updates -i -u -ws"
   },
+  "dependencies": {
+    "react": "18.2.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "18.2.0",
     "@commitlint/config-conventional": "18.1.0",
@@ -49,12 +52,14 @@
   },
   "pnpm": {
     "overrides": {
+      "cacache": ">=17.1.4",
       "eslint": "$eslint",
-      "lerna": "$lerna"
+      "lerna": "$lerna",
+      "react": "$react"
     }
   },
   "lint-staged": {
-    "./**/*.{ts,tsx}": [
+    "./packages/**/*.{ts,tsx}": [
       "eslint --fix --quiet --max-warnings 1",
       "prettier --write"
     ],

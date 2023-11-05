@@ -2,6 +2,16 @@
   "name": "@learn-languages/common",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artyom-88/learn-languages.git"
+  },
+  "publishConfig": {
+    "directory": "dist",
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "mkdir -p dist && cp package.json dist && tsc -p tsconfig-build.json",
     "depcheck": "pnpm dlx depcheck",
@@ -16,10 +26,5 @@
   },
   "devDependencies": {
     "@learn-languages/eslint-common": "workspace:^"
-  },
-  "pnpm": {
-    "overrides": {
-      "react": "$react"
-    }
   }
 }

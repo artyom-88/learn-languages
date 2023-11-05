@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "Common ESLint rules",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artyom-88/learn-languages.git"
+  },
+  "publishConfig": {
+    "directory": "dist",
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "mkdir -p dist && cp package.json dist && cp index.js dist",
     "depcheck": "pnpm dlx depcheck",
