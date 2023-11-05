@@ -34,7 +34,6 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-redeclare': 'off',
-    'import/no-default-export': 'off',
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'react/boolean-prop-naming': 'warn',
@@ -67,6 +66,14 @@ module.exports = {
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',
   },
+  overrides: [
+    {
+      files: ['*.tsx'],
+      rules: {
+        'import/no-default-export': 'off',
+      },
+    },
+  ],
   settings: {
     react: {
       version: 'detect',

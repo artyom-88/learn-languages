@@ -3,6 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 
 import { OpenAiModule } from '../features/openai/open-ai-module';
+import { WordsModule } from '../features/words/words-module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { OpenAiModule } from '../features/openai/open-ai-module';
       },
     }),
     OpenAiModule,
+    WordsModule,
   ],
 })
 export class AppModule {}
