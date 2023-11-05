@@ -7,7 +7,7 @@ export class OpenAiController {
   constructor(private readonly openAiService: OpenAiService) {}
 
   @Get('sample')
-  findAll(@Query('word') word: string): Promise<object> {
+  sample(@Query('word') word: string): Promise<object> {
     return this.openAiService.sample(word);
   }
 }
