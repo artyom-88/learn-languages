@@ -2,6 +2,14 @@
   "name": "root",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artyom-88/learn-languages.git"
+  },
   "scripts": {
     "build": "pnpm run build:clean && lerna run build",
     "build:clean": "lerna exec --no-bail -- rimraf dist/**",

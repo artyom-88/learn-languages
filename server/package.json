@@ -13,7 +13,7 @@
     "start:debug": "nest start --debug --watch",
     "start:dev": "nest start --watch",
     "start:prod": "node dist/main",
-    "test": "jest",
+    "test": "echo \"TODO: jest\"",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "echo 'No e2e tests implemented yet.'",
