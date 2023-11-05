@@ -23,7 +23,7 @@
     "@learn-languages/common": "workspace:^",
     "@ant-design/icons": "5.2.6",
     "@fontsource/roboto": "^5.0.8",
-    "@tanstack/react-query": "5.7.0",
+    "@tanstack/react-query": "5.7.1",
     "antd": "^5.11.0",
     "ky": "^1.1.3",
     "react": "18.2.0",
