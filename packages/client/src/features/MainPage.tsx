@@ -1,23 +1,18 @@
 import type { JSX } from 'react';
+import { NavLink } from 'react-router-dom';
 
-import type { IWord } from '@learn-languages/common/words-types';
-import { useQuery } from '@tanstack/react-query';
+import { Space } from 'antd';
 
-import PageLayout from 'common/components/PageLayout';
-import { httpClient } from 'common/http-client';
+import { WORDS_URL } from 'common/routes/routes-constants';
+import { useWordsQuery } from 'features/words/hooks/use-words-query';
 
 const MainPage = (): JSX.Element => {
-  const { data = [] } = useQuery<IWord[]>({
-    queryKey: ['word-list-query-key'],
-    queryFn: () => httpClient.get('words').json(),
-  });
-
+  const { data = [] } = useWordsQuery();
   return (
-    <PageLayout>
-      {data.map(({ name }) => (
-        <span key={name}>{name}</span>
-      ))}
-    </PageLayout>
+    <Space align='center' className='full-height full-width' direction='vertical'>
+      {data.length ? data.map(({ name }) => <span key={name}>{name}</span>) : <div>No words have been added yet</div>}
+      <NavLink to={WORDS_URL}>Edit words</NavLink>
+    </Space>
   );
 };
 
