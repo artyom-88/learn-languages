@@ -1,0 +1,60 @@
+{
+  "name": "@learn-languages/client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "build:ci": "tsc && pnpm run build",
+    "build:debug": "vite build --debug",
+    "build:dev": "vite build --mode development",
+    "depcheck": "pnpm dlx depcheck",
+    "lint": "eslint 'src/**/*.{tsx,ts}' --quiet --max-warnings 1",
+    "lint:fix": "eslint 'src/**/*.{tsx,ts}' --fix ",
+    "lint:warn": "eslint 'src/**/*.{tsx,ts}'",
+    "start": "vite",
+    "start:debug": "vite --debug",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest watch",
+    "update": "pnpm dlx npm-check -u -E -s"
+  },
+  "dependencies": {
+    "@learn-languages/common": "workspace:^",
+    "@ant-design/icons": "5.2.6",
+    "@fontsource/roboto": "^5.0.8",
+    "@tanstack/react-query": "5.7.0",
+    "antd": "^5.11.0",
+    "ky": "^1.1.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.18.0",
+    "yup": "1.3.2",
+    "zustand": "4.4.6"
+  },
+  "devDependencies": {
+    "@learn-languages/eslint-common": "workspace:^",
+    "@tanstack/eslint-plugin-query": "5.6.0",
+    "@testing-library/jest-dom": "6.1.4",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.5.1",
+    "@types/node": "18.18.8",
+    "@types/react": "18.2.34",
+    "@types/react-dom": "18.2.14",
+    "@vitejs/plugin-basic-ssl": "1.0.1",
+    "@vitejs/plugin-react": "4.1.1",
+    "@vitest/ui": "0.34.6",
+    "autoprefixer": "10.4.16",
+    "jsdom": "22.1.0",
+    "postcss": "8.4.31",
+    "sass": "1.69.5",
+    "typescript": "5.2.2",
+    "vite": "4.5.0",
+    "vitest": "0.34.6"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "$react"
+    }
+  }
+}

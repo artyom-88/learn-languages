@@ -1,0 +1,81 @@
+stages:
+  - test_and_lint
+  - build
+  # - deploy
+
+
+variables:
+  API_TOKEN: $DEPLOYMENT_TOKEN
+  APP_PATH: '$CI_PROJECT_DIR/chameleon-ui'
+  OUTPUT_PATH: '$APP_PATH/dist'
+
+before_script:
+  - export CI="true"
+  - npm i -g pnpm
+  - npm i -g typescript
+  - cd $APP_PATH
+  - node --version ; npm --version ; pnpm --version
+  # Keep it here for now to avoid reinstall modules twice
+  - pnpm install --frozen-lockfile
+
+.cache: &node_cache
+  key:
+    files:
+      - pnpm-lock.json
+  paths:
+    - node_modules/
+  policy: pull-push
+
+test_and_lint:
+  image: node:18.10.0-alpine
+  stage: test_and_lint
+  cache:
+    <<: *node_cache
+  script:
+    - pnpm run lint
+  environment:
+    name: develop
+  rules:
+    # Apply workaround for child pipeline - https://gitlab.com/gitlab-org/gitlab/-/issues/222370#note_662695503
+    - if: '$CI_COMMIT_REF_NAME == "main"'
+    - if: $CI_MERGE_REQUEST_IID
+
+build:
+  image: node:18.10.0-alpine
+  stage: build
+  cache:
+    <<: *node_cache
+    policy: pull
+  variables:
+    TAG: $CI_COMMIT_SHORT_SHA
+  script:
+    - pnpm run build:ci
+  environment:
+    name: develop
+  # dependencies:
+  #   - test_and_lint
+  rules:
+    # Apply workaround for child pipeline - https://gitlab.com/gitlab-org/gitlab/-/issues/222370#note_662695503
+    - if: '$CI_COMMIT_REF_NAME == "main"'
+    - if: $CI_MERGE_REQUEST_IID
+  artifacts:
+    paths:
+      - $OUTPUT_PATH
+
+# TODO: Disable deploy for now - seems an issue with image run - need more time to investigate
+# deploy:
+#   stage: deploy
+#   image: registry.gitlab.com/static-web-apps/azure-static-web-apps-deploy
+#   before_script:
+#     - echo "Deploying to Azure Static Web Apps"
+#     - ls $APP_PATH
+#     - ls $OUTPUT_PATH
+#     - echo $API_TOKEN
+#   dependencies:
+#     - build
+#   script:
+#     - echo "App deployed successfully."
+#   rules:
+#     # Apply workaround for child pipeline - https://gitlab.com/gitlab-org/gitlab/-/issues/222370#note_662695503
+#     - if: '$CI_COMMIT_REF_NAME == "main"'
+#     - if: $CI_MERGE_REQUEST_IID

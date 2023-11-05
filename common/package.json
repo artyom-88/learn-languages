@@ -1,0 +1,25 @@
+{
+  "name": "@learn-languages/common",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p dist && cp package.json dist && tsc -p tsconfig-build.json",
+    "depcheck": "pnpm dlx depcheck",
+    "lint": "eslint 'src/**/*.ts' --quiet --max-warnings 1",
+    "lint:fix": "eslint 'src/**/*.ts' --fix ",
+    "lint:warn": "eslint 'src/**/*.ts'",
+    "prepare": "pnpm run build",
+    "test": "echo \"\"",
+    "update": "pnpm dlx npm-check -u -E -s"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@learn-languages/eslint-common": "workspace:^"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "$react"
+    }
+  }
+}
