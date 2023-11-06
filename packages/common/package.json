@@ -2,8 +2,16 @@
   "name": "@learn-languages/common",
   "version": "0.1.0",
   "private": true,
-  "main": "index.js",
+  "type": "module",
   "types": "index.d.ts",
+  "main": ".index.umd.cjs",
+  "module": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.umd.cjs"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/artyom-88/learn-languages.git"
@@ -13,7 +21,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "build": "mkdir -p dist && cp package.json dist && tsc -p tsconfig-build.json",
+    "build": "mkdir -p dist && vite build && cp package.json dist",
     "depcheck": "pnpm dlx depcheck",
     "lint": "eslint 'src/**/*.ts' --quiet --max-warnings 1",
     "lint:fix": "eslint 'src/**/*.ts' --fix ",
@@ -25,6 +33,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "@learn-languages/eslint-common": "workspace:^"
+    "@learn-languages/eslint-common": "workspace:^",
+    "vite-plugin-dts": "3.6.3"
   }
 }

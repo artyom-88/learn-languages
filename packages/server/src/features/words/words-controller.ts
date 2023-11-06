@@ -1,7 +1,7 @@
 import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/common';
 
 import { CreateWordDto, UpdateWordDto } from './words-models';
-import { Word } from './words-schema';
+import type { Word } from './words-schema';
 import { WordsService } from './words-service';
 
 @Controller('words')

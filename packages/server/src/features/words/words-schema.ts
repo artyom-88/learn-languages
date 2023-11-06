@@ -1,11 +1,12 @@
+import type { IWord } from '@learn-languages/common';
 import { Language } from '@learn-languages/common';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { HydratedDocument } from 'mongoose';
+import type { HydratedDocument } from 'mongoose';
 
 export type WordDocument = HydratedDocument<Word>;
 
 @Schema()
-export class Word {
+export class Word implements IWord {
   @Prop()
   name!: string;
 
@@ -13,10 +14,10 @@ export class Word {
   lang!: Language;
 
   @Prop()
-  description!: string[];
+  description?: string[];
 
   @Prop()
-  examples!: string[];
+  examples?: string[];
 }
 
 export const WordSchema = SchemaFactory.createForClass(Word);

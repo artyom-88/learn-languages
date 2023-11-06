@@ -7,6 +7,12 @@ module.exports = {
   plugins: ['prettier', 'import'],
   rules: {
     '@typescript-eslint/ban-ts-comment': 'warn',
+    '@typescript-eslint/consistent-type-imports': [
+      'warn',
+      {
+        disallowTypeAnnotations: true,
+      },
+    ],
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/return-await': ['error', 'in-try-catch'],
     'import/no-cycle': 'error',

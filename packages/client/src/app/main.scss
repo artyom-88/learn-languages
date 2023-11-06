@@ -30,6 +30,10 @@ body {
   justify-content: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .align-center {
   align-items: center;
 }
@@ -40,4 +44,8 @@ body {
 
 .full-height {
   height: 100%;
+}
+
+.scroll-y {
+  overflow-y: auto;
 }

@@ -68,7 +68,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.tsx'],
+      files: ['*.tsx', 'vite.config.ts'],
       rules: {
         'import/no-default-export': 'off',
       },

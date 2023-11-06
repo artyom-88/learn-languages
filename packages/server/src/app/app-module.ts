@@ -14,9 +14,8 @@ import { WordsModule } from '../features/words/words-module';
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => {
         const uri = configService.get('DB_URI');
-        console.log('DB_URI', uri);
         return {
-          uri,
+          uri: uri,
           useNewUrlParser: true,
           useUnifiedTopology: true,
         };

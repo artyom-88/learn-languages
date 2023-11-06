@@ -9,6 +9,7 @@ import * as routesConstants from 'common/routes/routes-constants';
 
 const MainPage = lazy(() => import('features/MainPage'));
 const WordsPage = lazy(() => import('features/words/WordsPage'));
+const EditWordForm = lazy(() => import('features/words/EditWordForm'));
 
 const loadingPage = <LoadingPage />;
 
@@ -26,12 +27,8 @@ const routesConfig: RouteObject[] = [
         path: `${routesConstants.WORDS_URL}`,
         children: [
           {
-            element: <div>Words page index</div>,
-            index: true,
-          },
-          {
-            element: <div>Words detail</div>,
-            path: ':wordId',
+            element: <EditWordForm />,
+            path: `:${routesConstants.WORD_NAME_PARAM}`,
           },
         ],
       },

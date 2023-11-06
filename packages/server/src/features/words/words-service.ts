@@ -2,7 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 
-import { CreateWordDto, UpdateWordDto } from './words-models';
+import type { CreateWordDto, UpdateWordDto } from './words-models';
 import { Word } from './words-schema';
 
 @Injectable()
@@ -19,11 +19,12 @@ export class WordsService {
   }
 
   create(dto: CreateWordDto): Promise<Word> {
+    // TODO: check if word already exists
     return this.wordModel.create(dto);
   }
 
   async update(id: string, dto: UpdateWordDto): Promise<Word> {
-    const word = await this.wordModel.findByIdAndUpdate(id, dto).exec();
+    const word = await this.wordModel.findByIdAndUpdate(id, dto, { new: true }).exec();
     return this.returnIfExists(id, word);
   }
 
