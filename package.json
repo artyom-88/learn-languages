@@ -25,6 +25,7 @@
     "update:all": "pnpm dlx npm-check-updates -i -u -ws"
   },
   "dependencies": {
+    "dayjs": "1.11.10",
     "react": "18.2.0"
   },
   "devDependencies": {
@@ -47,14 +48,17 @@
     "lerna": "^7.4.2",
     "lint-staged": "15.0.2",
     "prettier": "3.0.3",
-    "rimraf": "^5.0.5",
-    "typescript": "5.2.2"
+    "rollup": "4.3.0",
+    "rimraf": "5.0.5",
+    "typescript": "5.2.2",
+    "vite": "4.5.0"
   },
   "pnpm": {
     "overrides": {
       "cacache": ">=17.1.4",
       "eslint": "$eslint",
       "lerna": "$lerna",
+      "rollup": "$rollup",
       "react": "$react"
     }
   },

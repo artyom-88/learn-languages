@@ -4,10 +4,9 @@
     "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "incremental": true,
     "outDir": "./dist",
     "removeComments": true,
-    "rootDir": "src",
+    "rootDir": "src"
   },
   "include": ["src"]
 }

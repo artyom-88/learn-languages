@@ -44,6 +44,6 @@
   "include": [
     "./src",
     "vite.config.ts",
-    ".eslintrc.js"
+    ".eslintrc.cjs"
   ]
 }

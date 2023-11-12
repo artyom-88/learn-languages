@@ -3,6 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 
 import { OpenAiModule } from '../features/openai/open-ai-module';
+import { WordsModule } from '../features/words/words-module';
 
 @Module({
   imports: [
@@ -13,15 +14,15 @@ import { OpenAiModule } from '../features/openai/open-ai-module';
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => {
         const uri = configService.get('DB_URI');
-        console.log('DB_URI', uri);
         return {
-          uri,
+          uri: uri,
           useNewUrlParser: true,
           useUnifiedTopology: true,
         };
       },
     }),
     OpenAiModule,
+    WordsModule,
   ],
 })
 export class AppModule {}

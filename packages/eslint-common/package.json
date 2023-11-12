@@ -2,7 +2,8 @@
   "name": "@learn-languages/eslint-common",
   "version": "0.1.0",
   "description": "Common ESLint rules",
-  "main": "index.js",
+  "main": "index.cjs",
+  "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/artyom-88/learn-languages.git"
@@ -12,11 +13,11 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "build": "mkdir -p dist && cp package.json dist && cp index.js dist",
+    "build": "mkdir -p dist && cp package.json dist && cp index.cjs dist",
     "depcheck": "pnpm dlx depcheck",
-    "lint": "eslint index.js --quiet --max-warnings 0",
-    "lint:fix": "eslint index.js --fix",
-    "lint:warn": "eslint index.js",
+    "lint": "eslint index.cjs --quiet --max-warnings 0",
+    "lint:fix": "eslint index.cjs --fix",
+    "lint:warn": "eslint index.cjs",
     "prepare": "pnpm run build",
     "test": "echo \"\"",
     "update": "pnpm dlx npm-check -u -E -s"

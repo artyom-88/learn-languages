@@ -22,7 +22,7 @@ const queryClient = new QueryClient({
 const App = (): JSX.Element => (
   <StrictMode>
     <ConfigProvider theme={appTheme}>
-      <AntdApp>
+      <AntdApp className='flex flex-column full-height full-width'>
         <ErrorBoundary>
           <QueryClientProvider client={queryClient}>
             <BrowserRouter>
