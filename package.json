@@ -23,7 +23,7 @@
     "server:start": "pnpm --filter server start",
     "server:start:debug": "pnpm --filter server start:debug",
     "server:start:dev": "pnpm --filter server start:dev",
-    "server:start:prod": "node server/dist/main",
+    "server:start:prod": "node ./packages/server/dist/main.js",
     "test": "lerna run --parallel test",
     "update": "pnpm dlx npm-check-updates -i -u --root",
     "update:all": "pnpm dlx npm-check-updates -i -u -ws"
