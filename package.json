@@ -20,6 +20,8 @@
     "lint:fix": "lerna run --parallel lint:fix",
     "pre-commit": "lint-staged",
     "prepare": "husky install",
+    "client:start": "pnpm --filter client start",
+    "client:start:debug": "pnpm --filter client start:debug",
     "server:start": "pnpm --filter server start",
     "server:start:debug": "pnpm --filter server start:debug",
     "server:start:dev": "pnpm --filter server start:dev",
