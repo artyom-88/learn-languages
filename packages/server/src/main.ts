@@ -29,7 +29,7 @@ async function bootstrap() {
   SwaggerModule.setup('api', app, document);
 
   app.useGlobalInterceptors(new LoggingInterceptor());
-  await app.listen(process.env.APP_PORT || APP_DEFAULT_PORT);
+  await app.listen(process.env.PORT || APP_DEFAULT_PORT);
   const url = await app.getUrl();
   console.log(`Application is running on: ${url}`);
 }
