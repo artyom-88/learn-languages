@@ -5,6 +5,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { OpenAiModule } from '../features/openai/open-ai-module';
 import { WordsModule } from '../features/words/words-module';
 
+import { AppController } from './app-controller';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -24,5 +26,6 @@ import { WordsModule } from '../features/words/words-module';
     OpenAiModule,
     WordsModule,
   ],
+  controllers: [AppController],
 })
 export class AppModule {}

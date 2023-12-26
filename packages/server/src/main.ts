@@ -5,7 +5,7 @@ import { FastifyAdapter } from '@nestjs/platform-fastify';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 import { AppModule } from './app/app-module';
-import { APP_DEFAULT_PORT } from './common/common-constants';
+import { PORT } from './common/common-constants';
 import { LoggingInterceptor } from './common/interceptos/logging-interceptor';
 
 async function bootstrap() {
@@ -29,7 +29,7 @@ async function bootstrap() {
   SwaggerModule.setup('api', app, document);
 
   app.useGlobalInterceptors(new LoggingInterceptor());
-  await app.listen(process.env.PORT || APP_DEFAULT_PORT);
+  await app.listen(PORT);
   const url = await app.getUrl();
   console.log(`Application is running on: ${url}`);
 }
