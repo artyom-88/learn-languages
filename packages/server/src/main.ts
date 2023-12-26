@@ -5,11 +5,12 @@ import { FastifyAdapter } from '@nestjs/platform-fastify';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 import { AppModule } from './app/app-module';
-import { APP_DEFAULT_PORT } from './common/common-constants';
+import { PORT } from './common/common-constants';
 import { LoggingInterceptor } from './common/interceptos/logging-interceptor';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(AppModule, new FastifyAdapter());
+  app.setGlobalPrefix('api');
   app.enableCors({
     origin: [/https?:\/\/localhost:[\d]{4}/],
   });
@@ -26,10 +27,10 @@ async function bootstrap() {
 
   const config = new DocumentBuilder().setTitle('Learn Languages API').build();
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api', app, document);
+  SwaggerModule.setup('api/docs', app, document);
 
   app.useGlobalInterceptors(new LoggingInterceptor());
-  await app.listen(process.env.PORT || APP_DEFAULT_PORT);
+  await app.listen(PORT, '0.0.0.0');
   const url = await app.getUrl();
   console.log(`Application is running on: ${url}`);
 }
