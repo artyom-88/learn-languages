@@ -1,6 +1,7 @@
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
+import type { UserConfig } from 'vite';
 import { defineConfig, loadEnv } from 'vite';
 
 const DEFAULT_DOMAIN = 'localhost';
@@ -8,7 +9,7 @@ const DEFAULT_PORT = 8080;
 const PROD = 'production';
 const DEV = 'development';
 
-export default defineConfig(({ mode }) => {
+export default defineConfig(({ mode }): UserConfig => {
   const env = loadEnv(mode, process.cwd());
   const isDevelopment = mode !== PROD;
   const host = `${env.VITE_DOMAIN || DEFAULT_DOMAIN}`;
