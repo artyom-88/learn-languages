@@ -10,6 +10,7 @@ import { LoggingInterceptor } from './common/interceptos/logging-interceptor';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(AppModule, new FastifyAdapter());
+  app.setGlobalPrefix('api');
   app.enableCors({
     origin: [/https?:\/\/localhost:[\d]{4}/],
   });
@@ -26,7 +27,7 @@ async function bootstrap() {
 
   const config = new DocumentBuilder().setTitle('Learn Languages API').build();
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api', app, document);
+  SwaggerModule.setup('api/docs', app, document);
 
   app.useGlobalInterceptors(new LoggingInterceptor());
   await app.listen(PORT);
