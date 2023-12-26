@@ -30,7 +30,7 @@ async function bootstrap() {
   SwaggerModule.setup('api/docs', app, document);
 
   app.useGlobalInterceptors(new LoggingInterceptor());
-  await app.listen(PORT);
+  await app.listen(PORT, '0.0.0.0');
   const url = await app.getUrl();
   console.log(`Application is running on: ${url}`);
 }

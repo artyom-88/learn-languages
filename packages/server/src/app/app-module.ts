@@ -33,5 +33,7 @@ import { AppController } from './app-controller';
     WordsModule,
   ],
   controllers: [AppController],
+  providers: [],
+  exports: [],
 })
 export class AppModule {}
