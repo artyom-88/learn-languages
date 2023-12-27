@@ -56,7 +56,7 @@ importers:
         version: 2.29.0(@typescript-eslint/parser@6.9.1)(eslint@8.52.0)
       eslint-plugin-prettier:
         specifier: 5.0.1
-        version: 5.0.1(eslint-config-prettier@9.0.0)(eslint@8.52.0)(prettier@3.0.3)
+        version: 5.0.1(eslint-config-prettier@9.0.0)(eslint@8.52.0)(prettier@3.1.1)
       eslint-plugin-react:
         specifier: 7.33.2
         version: 7.33.2(eslint@8.52.0)
@@ -79,8 +79,8 @@ importers:
         specifier: 15.2.0
         version: 15.2.0
       prettier:
-        specifier: 3.0.3
-        version: 3.0.3
+        specifier: 3.1.1
+        version: 3.1.1
       rimraf:
         specifier: 5.0.5
         version: 5.0.5
@@ -5798,6 +5798,28 @@ packages:
       prettier: 3.0.3
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.5
+    dev: false
+
+  /eslint-plugin-prettier@5.0.1(eslint-config-prettier@9.0.0)(eslint@8.52.0)(prettier@3.1.1):
+    resolution: {integrity: sha512-m3u5RnR56asrwV/lDC4GHorlW75DsFfmUcjfCYylTUs85dBRnB7VM6xG8eCMJdeDRnppzmxZVf1GEPJvl1JmNg==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      '@types/eslint': '>=8.0.0'
+      eslint: 8.52.0
+      eslint-config-prettier: '*'
+      prettier: '>=3.0.0'
+    peerDependenciesMeta:
+      '@types/eslint':
+        optional: true
+      eslint-config-prettier:
+        optional: true
+    dependencies:
+      eslint: 8.52.0
+      eslint-config-prettier: 9.0.0(eslint@8.52.0)
+      prettier: 3.1.1
+      prettier-linter-helpers: 1.0.0
+      synckit: 0.8.5
+    dev: true
 
   /eslint-plugin-react-hooks@4.6.0(eslint@8.52.0):
     resolution: {integrity: sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==}
@@ -9757,6 +9779,7 @@ packages:
     resolution: {integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==}
     engines: {node: '>=14'}
     hasBin: true
+    dev: false
 
   /prettier@3.1.1:
     resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
