@@ -49,7 +49,7 @@
     "eslint-plugin-prettier": "5.0.1",
     "eslint-plugin-react": "7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-plugin-unicorn": "49.0.0",
+    "eslint-plugin-unicorn": "50.0.1",
     "eslint-plugin-vitest": "0.3.8",
     "husky": "8.0.3",
     "lerna": "^7.4.2",
