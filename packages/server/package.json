@@ -35,7 +35,7 @@
     "@nestjs/swagger": "7.1.17",
     "mongoose": "7.6.7",
     "openai": "4.24.1",
-    "reflect-metadata": "0.1.13",
+    "reflect-metadata": "0.1.14",
     "rxjs": "7.8.1"
   },
   "devDependencies": {
