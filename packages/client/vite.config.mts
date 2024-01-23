@@ -27,7 +27,6 @@ export default defineConfig(({ mode }): UserConfig => {
     },
     server: {
       host: host,
-      https: true,
       port: port,
     },
     build: {
