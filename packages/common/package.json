@@ -34,6 +34,6 @@
   },
   "devDependencies": {
     "@learn-languages/eslint-common": "workspace:^",
-    "vite-plugin-dts": "3.7.0"
+    "vite-plugin-dts": "3.7.1"
   }
 }
