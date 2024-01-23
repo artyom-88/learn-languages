@@ -1,10 +1,13 @@
-import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Patch, Post, UseInterceptors } from '@nestjs/common';
+
+import { LoggingInterceptor } from '../../common/interceptos/logging-interceptor';
 
 import { CreateWordDto, UpdateWordDto } from './words-models';
 import type { Word } from './words-schema';
 import { WordsService } from './words-service';
 
 @Controller('words')
+@UseInterceptors(LoggingInterceptor)
 export class WordsController {
   constructor(private readonly wordsService: WordsService) {}
 
