@@ -165,8 +165,8 @@ importers:
         specifier: 10.4.17
         version: 10.4.17(postcss@8.4.33)
       jsdom:
-        specifier: 23.0.1
-        version: 23.0.1
+        specifier: 24.0.0
+        version: 24.0.0
       postcss:
         specifier: 8.4.33
         version: 8.4.33
@@ -178,7 +178,7 @@ importers:
         version: 5.3.3
       vitest:
         specifier: 1.2.1
-        version: 1.2.1(@types/node@18.19.3)(@vitest/ui@1.2.1)(jsdom@23.0.1)(sass@1.70.0)
+        version: 1.2.1(@types/node@18.19.3)(@vitest/ui@1.2.1)(jsdom@24.0.0)(sass@1.70.0)
 
   packages/common:
     devDependencies:
@@ -231,7 +231,7 @@ importers:
         version: 4.10.0(graphql@16.8.1)
       '@as-integrations/fastify':
         specifier: 2.1.1
-        version: 2.1.1(@apollo/server@4.10.0)(fastify@4.25.1)
+        version: 2.1.1(@apollo/server@4.10.0)(fastify@4.26.0)
       '@fastify/static':
         specifier: 6.12.0
         version: 6.12.0
@@ -270,7 +270,7 @@ importers:
         version: 10.3.3(@fastify/static@6.12.0)(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)
       '@nestjs/serve-static':
         specifier: 4.0.1
-        version: 4.0.1(@fastify/static@6.12.0)(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(fastify@4.25.1)
+        version: 4.0.1(@fastify/static@6.12.0)(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(fastify@4.26.0)
       '@nestjs/swagger':
         specifier: 7.3.0
         version: 7.3.0(@fastify/static@6.12.0)(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(reflect-metadata@0.2.1)
@@ -687,7 +687,7 @@ packages:
       xss: 1.0.14
     dev: false
 
-  /@as-integrations/fastify@2.1.1(@apollo/server@4.10.0)(fastify@4.25.1):
+  /@as-integrations/fastify@2.1.1(@apollo/server@4.10.0)(fastify@4.26.0):
     resolution: {integrity: sha512-iupYSQyRrlBAdsDcCYzuKjJlJAKiQpRDLd33A6yAF3Ip/rGrSDDDrxfJWp6FqyVlivSL+MQkGIphmUI/ckfZkg==}
     engines: {node: '>=16'}
     peerDependencies:
@@ -695,7 +695,7 @@ packages:
       fastify: ^4.4.0
     dependencies:
       '@apollo/server': 4.10.0(graphql@16.8.1)
-      fastify: 4.25.1
+      fastify: 4.26.0
       fastify-plugin: 4.5.1
     dev: false
 
@@ -2188,7 +2188,7 @@ packages:
     dependencies:
       '@apollo/server': 4.10.0(graphql@16.8.1)
       '@apollo/server-plugin-landing-page-graphql-playground': 4.0.0(@apollo/server@4.10.0)
-      '@as-integrations/fastify': 2.1.1(@apollo/server@4.10.0)(fastify@4.25.1)
+      '@as-integrations/fastify': 2.1.1(@apollo/server@4.10.0)(fastify@4.26.0)
       '@nestjs/common': 10.3.3(reflect-metadata@0.2.1)(rxjs@7.8.1)
       '@nestjs/core': 10.3.3(@nestjs/common@10.3.3)(reflect-metadata@0.2.1)(rxjs@7.8.1)
       '@nestjs/graphql': 12.1.1(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(graphql@16.8.1)(reflect-metadata@0.2.1)
@@ -2430,7 +2430,7 @@ packages:
       - chokidar
     dev: true
 
-  /@nestjs/serve-static@4.0.1(@fastify/static@6.12.0)(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(fastify@4.25.1):
+  /@nestjs/serve-static@4.0.1(@fastify/static@6.12.0)(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(fastify@4.26.0):
     resolution: {integrity: sha512-AoOrVdAe+WmsceuCcA8nWmKUYmaOsg9pqBCbIj7PS4W3XdikJQMtfxgSIoOlyUksZdhTBFjHqKh0Yhpj6pulwQ==}
     peerDependencies:
       '@fastify/static': ^6.5.0
@@ -2449,7 +2449,7 @@ packages:
       '@fastify/static': 6.12.0
       '@nestjs/common': 10.3.3(reflect-metadata@0.2.1)(rxjs@7.8.1)
       '@nestjs/core': 10.3.3(@nestjs/common@10.3.3)(reflect-metadata@0.2.1)(rxjs@7.8.1)
-      fastify: 4.25.1
+      fastify: 4.26.0
       path-to-regexp: 0.2.5
     dev: false
 
@@ -3322,7 +3322,7 @@ packages:
       dom-accessibility-api: 0.6.3
       lodash: 4.17.21
       redent: 3.0.0
-      vitest: 1.2.1(@types/node@18.19.3)(@vitest/ui@1.2.1)(jsdom@23.0.1)(sass@1.70.0)
+      vitest: 1.2.1(@types/node@18.19.3)(@vitest/ui@1.2.1)(jsdom@24.0.0)(sass@1.70.0)
     dev: true
 
   /@testing-library/react@14.1.2(react-dom@18.2.0)(react@18.2.0):
@@ -4090,7 +4090,7 @@ packages:
       pathe: 1.1.1
       picocolors: 1.0.0
       sirv: 2.0.4
-      vitest: 1.2.1(@types/node@18.19.3)(@vitest/ui@1.2.1)(jsdom@23.0.1)(sass@1.70.0)
+      vitest: 1.2.1(@types/node@18.19.3)(@vitest/ui@1.2.1)(jsdom@24.0.0)(sass@1.70.0)
     dev: true
 
   /@vitest/utils@1.2.1:
@@ -5689,9 +5689,9 @@ packages:
     resolution: {integrity: sha512-FAaLDaplstoRsDR8XGYH51znUN0UY7nMc6Z9/fvE8EXGwvJE9hu7W2vHwx1+bd6gCYnln9nLbzxFTrcO9YQDZw==}
     dev: false
 
-  /cssstyle@3.0.0:
-    resolution: {integrity: sha512-N4u2ABATi3Qplzf0hWbVCdjenim8F3ojEXpBDF5hBpjzW182MjNGLqfmQ0SkSPeQ+V86ZXgeH8aXj6kayd4jgg==}
-    engines: {node: '>=14'}
+  /cssstyle@4.0.1:
+    resolution: {integrity: sha512-8ZYiJ3A/3OkDd093CBT/0UKDWry7ak4BdPTFP2+QEP7cmhouyq/Up709ASSj2cK02BbZiMgk7kYjZNS4QP5qrQ==}
+    engines: {node: '>=18'}
     dependencies:
       rrweb-cssom: 0.6.0
     dev: true
@@ -6565,7 +6565,7 @@ packages:
       '@typescript-eslint/eslint-plugin': 6.16.0(@typescript-eslint/parser@6.16.0)(eslint@8.52.0)(typescript@5.3.3)
       '@typescript-eslint/utils': 6.9.1(eslint@8.52.0)(typescript@5.3.3)
       eslint: 8.52.0
-      vitest: 1.2.1(@types/node@18.19.3)(@vitest/ui@1.2.1)(jsdom@23.0.1)(sass@1.70.0)
+      vitest: 1.2.1(@types/node@18.19.3)(@vitest/ui@1.2.1)(jsdom@24.0.0)(sass@1.70.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -6902,29 +6902,6 @@ packages:
     resolution: {integrity: sha512-stRHYGeuqpEZTL1Ef0Ovr2ltazUT9g844X5z/zEBFLG8RYlpDiOCIG+ATvYEp+/zmc7sN29mcIMp8gvYplYPIQ==}
     dev: false
 
-  /fastify@4.25.1:
-    resolution: {integrity: sha512-D8d0rv61TwqoAS7lom2tvIlgVMlx88lLsiwXyWNjA7CU/LC/mx/Gp2WAlC0S/ABq19U+y/aRvYFG5xLUu2aMrg==}
-    dependencies:
-      '@fastify/ajv-compiler': 3.5.0
-      '@fastify/error': 3.4.1
-      '@fastify/fast-json-stringify-compiler': 4.3.0
-      abstract-logging: 2.0.1
-      avvio: 8.2.1
-      fast-content-type-parse: 1.1.0
-      fast-json-stringify: 5.9.1
-      find-my-way: 7.7.0
-      light-my-request: 5.11.0
-      pino: 8.17.2
-      process-warning: 3.0.0
-      proxy-addr: 2.0.7
-      rfdc: 1.3.0
-      secure-json-parse: 2.7.0
-      semver: 7.5.4
-      toad-cache: 3.4.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /fastify@4.26.0:
     resolution: {integrity: sha512-Fq/7ziWKc6pYLYLIlCRaqJqEVTIZ5tZYfcW/mDK2AQ9v/sqjGFpj0On0/7hU50kbPVjLO4de+larPA1WwPZSfw==}
     dependencies:
@@ -7009,15 +6986,6 @@ packages:
       unpipe: 1.0.0
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /find-my-way@7.7.0:
-    resolution: {integrity: sha512-+SrHpvQ52Q6W9f3wJoJBbAQULJuNEEQwBvlvYwACDhBTLOTMiQ0HYWh4+vC3OivGP2ENcTI1oKlFA2OepJNjhQ==}
-    engines: {node: '>=14'}
-    dependencies:
-      fast-deep-equal: 3.1.3
-      fast-querystring: 1.1.2
-      safe-regex2: 2.0.0
     dev: false
 
   /find-my-way@8.1.0:
@@ -8756,8 +8724,8 @@ packages:
     dependencies:
       argparse: 2.0.1
 
-  /jsdom@23.0.1:
-    resolution: {integrity: sha512-2i27vgvlUsGEBO9+/kJQRbtqtm+191b5zAZrU/UezVmnC2dlDAFLgDYJvAEi94T4kjsRKkezEtLQTgsNEsW2lQ==}
+  /jsdom@24.0.0:
+    resolution: {integrity: sha512-UDS2NayCvmXSXVP6mpTj+73JnNQadZlr9N68189xib2tx5Mls7swlTNao26IoHv46BZJFvXygyRtyXd1feAk1A==}
     engines: {node: '>=18'}
     peerDependencies:
       canvas: ^2.11.2
@@ -8765,7 +8733,7 @@ packages:
       canvas:
         optional: true
     dependencies:
-      cssstyle: 3.0.0
+      cssstyle: 4.0.1
       data-urls: 5.0.0
       decimal.js: 10.4.3
       form-data: 4.0.0
@@ -8784,7 +8752,7 @@ packages:
       whatwg-encoding: 3.1.1
       whatwg-mimetype: 4.0.0
       whatwg-url: 14.0.0
-      ws: 8.14.2
+      ws: 8.16.0
       xml-name-validator: 5.0.0
     transitivePeerDependencies:
       - bufferutil
@@ -13247,7 +13215,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@1.2.1(@types/node@18.19.3)(@vitest/ui@1.2.1)(jsdom@23.0.1)(sass@1.70.0):
+  /vitest@1.2.1(@types/node@18.19.3)(@vitest/ui@1.2.1)(jsdom@24.0.0)(sass@1.70.0):
     resolution: {integrity: sha512-TRph8N8rnSDa5M2wKWJCMnztCZS9cDcgVTQ6tsTFTG/odHJ4l5yNVqvbeDJYJRZ6is3uxaEpFs8LL6QM+YFSdA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -13284,7 +13252,7 @@ packages:
       chai: 4.3.10
       debug: 4.3.4
       execa: 8.0.1
-      jsdom: 23.0.1
+      jsdom: 24.0.0
       local-pkg: 0.5.0
       magic-string: 0.30.5
       pathe: 1.1.1
@@ -13656,19 +13624,6 @@ packages:
         optional: true
     dev: false
 
-  /ws@8.14.2:
-    resolution: {integrity: sha512-wEBG1ftX4jcglPxgFCMJmZ2PLtSbJ2Peg6TmpJFTbe9GZYOQCDPdMYu/Tm0/bGZkw8paZnJY45J4K2PZrLYq8g==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-    dev: true
-
   /ws@8.16.0:
     resolution: {integrity: sha512-HS0c//TP7Ina87TfiPUz1rQzMhHrl/SG2guqRcTOIUYD2q8uhUdNHZYJUaQ8aTGPzCh+c6oawMKW35nFl1dxyQ==}
     engines: {node: '>=10.0.0'}
@@ -13680,7 +13635,6 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
-    dev: false
 
   /xml-name-validator@5.0.0:
     resolution: {integrity: sha512-EvGK8EJ3DhaHfbRlETOWAS5pO9MZITeauHKJyb8wyajUfQUenkIg2MvLDTZ4T/TgIcm3HU0TFBgWWboAZ30UHg==}
