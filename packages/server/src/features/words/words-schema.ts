@@ -9,6 +9,9 @@ export type WordDocument = HydratedDocument<Word>;
 @Schema()
 @ObjectType()
 export class Word implements IWord {
+  @Field(() => String, { nullable: true })
+  _id?: string;
+
   @Prop()
   @Field()
   name!: string;

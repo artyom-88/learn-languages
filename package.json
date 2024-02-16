@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "18.x",
+    "node": "20.x",
     "pnpm": "8.x"
   },
   "repository": {
@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "dayjs": "1.11.10",
+    "graphql": "16.8.1",
     "react": "18.2.0"
   },
   "devDependencies": {

@@ -30,6 +30,6 @@ export class CreateWordDto extends UpdateWordDto implements IWord {
   @ApiProperty({ type: 'string', description: 'A word language', required: true })
   @IsNotEmpty()
   @IsString()
-  @Field(() => Language)
+  @Field(() => Language, { defaultValue: Language.EN, nullable: true })
   readonly lang!: Language;
 }

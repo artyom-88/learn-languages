@@ -29,14 +29,14 @@ export class WordsResolver {
   }
 
   @Mutation((returns) => Word)
-  async createWord(@Args('createWordDto') dto: CreateWordDto): Promise<Word> {
+  async createWord(@Args('dto') dto: CreateWordDto): Promise<Word> {
     const word = await this.wordsService.create(dto);
     void pubSub.publish('wordCreated', { word: word });
     return word;
   }
 
   @Mutation((returns) => Word)
-  async updateWord(@Args('id') id: string, @Args('updateWordDto') dto: UpdateWordDto): Promise<Word> {
+  async updateWord(@Args('id') id: string, @Args('dto') dto: UpdateWordDto): Promise<Word> {
     const word = await this.wordsService.update(id, dto);
     void pubSub.publish('wordCreated', { word: word });
     return word;
