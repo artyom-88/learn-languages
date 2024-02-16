@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "5.2.6",
-    "@apollo/client":"3.8.10",
+    "@apollo/client":"3.9.5",
     "@fontsource/roboto": "5.0.8",
     "@learn-languages/common": "workspace:^",
     "antd": "^5.13.2",
