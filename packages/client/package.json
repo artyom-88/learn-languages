@@ -34,7 +34,6 @@
   },
   "devDependencies": {
     "@learn-languages/eslint-common": "workspace:^",
-    "@tanstack/eslint-plugin-query": "5.17.20",
     "@testing-library/jest-dom": "6.2.1",
     "@testing-library/react": "14.1.2",
     "@testing-library/user-event": "14.5.2",
