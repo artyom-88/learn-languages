@@ -141,8 +141,8 @@ importers:
         specifier: 5.17.20
         version: 5.17.20(eslint@8.52.0)(typescript@5.3.3)
       '@testing-library/jest-dom':
-        specifier: 6.2.1
-        version: 6.2.1(vitest@1.2.1)
+        specifier: 6.4.2
+        version: 6.4.2(vitest@1.2.1)
       '@testing-library/react':
         specifier: 14.1.2
         version: 14.1.2(react-dom@18.2.0)(react@18.2.0)
@@ -231,7 +231,7 @@ importers:
         version: 4.10.0(graphql@16.8.1)
       '@as-integrations/fastify':
         specifier: 2.1.1
-        version: 2.1.1(@apollo/server@4.10.0)(fastify@4.25.1)
+        version: 2.1.1(@apollo/server@4.10.0)(fastify@4.26.0)
       '@fastify/static':
         specifier: 6.12.0
         version: 6.12.0
@@ -270,7 +270,7 @@ importers:
         version: 10.3.3(@fastify/static@6.12.0)(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)
       '@nestjs/serve-static':
         specifier: 4.0.1
-        version: 4.0.1(@fastify/static@6.12.0)(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(fastify@4.25.1)
+        version: 4.0.1(@fastify/static@6.12.0)(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(fastify@4.26.0)
       '@nestjs/swagger':
         specifier: 7.3.0
         version: 7.3.0(@fastify/static@6.12.0)(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(reflect-metadata@0.2.1)
@@ -687,7 +687,7 @@ packages:
       xss: 1.0.14
     dev: false
 
-  /@as-integrations/fastify@2.1.1(@apollo/server@4.10.0)(fastify@4.25.1):
+  /@as-integrations/fastify@2.1.1(@apollo/server@4.10.0)(fastify@4.26.0):
     resolution: {integrity: sha512-iupYSQyRrlBAdsDcCYzuKjJlJAKiQpRDLd33A6yAF3Ip/rGrSDDDrxfJWp6FqyVlivSL+MQkGIphmUI/ckfZkg==}
     engines: {node: '>=16'}
     peerDependencies:
@@ -695,7 +695,7 @@ packages:
       fastify: ^4.4.0
     dependencies:
       '@apollo/server': 4.10.0(graphql@16.8.1)
-      fastify: 4.25.1
+      fastify: 4.26.0
       fastify-plugin: 4.5.1
     dev: false
 
@@ -2188,7 +2188,7 @@ packages:
     dependencies:
       '@apollo/server': 4.10.0(graphql@16.8.1)
       '@apollo/server-plugin-landing-page-graphql-playground': 4.0.0(@apollo/server@4.10.0)
-      '@as-integrations/fastify': 2.1.1(@apollo/server@4.10.0)(fastify@4.25.1)
+      '@as-integrations/fastify': 2.1.1(@apollo/server@4.10.0)(fastify@4.26.0)
       '@nestjs/common': 10.3.3(reflect-metadata@0.2.1)(rxjs@7.8.1)
       '@nestjs/core': 10.3.3(@nestjs/common@10.3.3)(reflect-metadata@0.2.1)(rxjs@7.8.1)
       '@nestjs/graphql': 12.1.1(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(graphql@16.8.1)(reflect-metadata@0.2.1)
@@ -2430,7 +2430,7 @@ packages:
       - chokidar
     dev: true
 
-  /@nestjs/serve-static@4.0.1(@fastify/static@6.12.0)(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(fastify@4.25.1):
+  /@nestjs/serve-static@4.0.1(@fastify/static@6.12.0)(@nestjs/common@10.3.3)(@nestjs/core@10.3.3)(fastify@4.26.0):
     resolution: {integrity: sha512-AoOrVdAe+WmsceuCcA8nWmKUYmaOsg9pqBCbIj7PS4W3XdikJQMtfxgSIoOlyUksZdhTBFjHqKh0Yhpj6pulwQ==}
     peerDependencies:
       '@fastify/static': ^6.5.0
@@ -2449,7 +2449,7 @@ packages:
       '@fastify/static': 6.12.0
       '@nestjs/common': 10.3.3(reflect-metadata@0.2.1)(rxjs@7.8.1)
       '@nestjs/core': 10.3.3(@nestjs/common@10.3.3)(reflect-metadata@0.2.1)(rxjs@7.8.1)
-      fastify: 4.25.1
+      fastify: 4.26.0
       path-to-regexp: 0.2.5
     dev: false
 
@@ -3293,8 +3293,8 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/jest-dom@6.2.1(vitest@1.2.1):
-    resolution: {integrity: sha512-Nuy/uFFDe9h/2jwoUuMKgoxvgkUv4S9jI9bARj6dGUKJ3euRhg8JFi5sciYbrayoxkadEOZednRT9+vo6LvvxQ==}
+  /@testing-library/jest-dom@6.4.2(vitest@1.2.1):
+    resolution: {integrity: sha512-CzqH0AFymEMG48CpzXFriYYkOjk6ZGPCLMhW9e9jg3KMCn5OfJecF8GtGW7yGfR/IgCe3SX8BSwjdzI6BBbZLw==}
     engines: {node: '>=14', npm: '>=6', yarn: '>=1'}
     peerDependencies:
       '@jest/globals': '>= 28'
@@ -6902,29 +6902,6 @@ packages:
     resolution: {integrity: sha512-stRHYGeuqpEZTL1Ef0Ovr2ltazUT9g844X5z/zEBFLG8RYlpDiOCIG+ATvYEp+/zmc7sN29mcIMp8gvYplYPIQ==}
     dev: false
 
-  /fastify@4.25.1:
-    resolution: {integrity: sha512-D8d0rv61TwqoAS7lom2tvIlgVMlx88lLsiwXyWNjA7CU/LC/mx/Gp2WAlC0S/ABq19U+y/aRvYFG5xLUu2aMrg==}
-    dependencies:
-      '@fastify/ajv-compiler': 3.5.0
-      '@fastify/error': 3.4.1
-      '@fastify/fast-json-stringify-compiler': 4.3.0
-      abstract-logging: 2.0.1
-      avvio: 8.2.1
-      fast-content-type-parse: 1.1.0
-      fast-json-stringify: 5.9.1
-      find-my-way: 7.7.0
-      light-my-request: 5.11.0
-      pino: 8.17.2
-      process-warning: 3.0.0
-      proxy-addr: 2.0.7
-      rfdc: 1.3.0
-      secure-json-parse: 2.7.0
-      semver: 7.5.4
-      toad-cache: 3.4.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /fastify@4.26.0:
     resolution: {integrity: sha512-Fq/7ziWKc6pYLYLIlCRaqJqEVTIZ5tZYfcW/mDK2AQ9v/sqjGFpj0On0/7hU50kbPVjLO4de+larPA1WwPZSfw==}
     dependencies:
@@ -7009,15 +6986,6 @@ packages:
       unpipe: 1.0.0
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /find-my-way@7.7.0:
-    resolution: {integrity: sha512-+SrHpvQ52Q6W9f3wJoJBbAQULJuNEEQwBvlvYwACDhBTLOTMiQ0HYWh4+vC3OivGP2ENcTI1oKlFA2OepJNjhQ==}
-    engines: {node: '>=14'}
-    dependencies:
-      fast-deep-equal: 3.1.3
-      fast-querystring: 1.1.2
-      safe-regex2: 2.0.0
     dev: false
 
   /find-my-way@8.1.0:
