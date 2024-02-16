@@ -18,16 +18,13 @@ importers:
       dayjs:
         specifier: 1.11.10
         version: 1.11.10
-      graphql:
-        specifier: 16.8.1
-        version: 16.8.1
       react:
         specifier: 18.2.0
         version: 18.2.0
     devDependencies:
       '@commitlint/cli':
         specifier: 18.2.0
-        version: 18.2.0(typescript@5.2.2)
+        version: 18.2.0(typescript@5.3.3)
       '@commitlint/config-conventional':
         specifier: 18.5.0
         version: 18.5.0
@@ -42,10 +39,10 @@ importers:
         version: 18.2.46
       '@typescript-eslint/eslint-plugin':
         specifier: 6.16.0
-        version: 6.16.0(@typescript-eslint/parser@6.16.0)(eslint@8.52.0)(typescript@5.2.2)
+        version: 6.16.0(@typescript-eslint/parser@6.16.0)(eslint@8.52.0)(typescript@5.3.3)
       '@typescript-eslint/parser':
         specifier: 6.16.0
-        version: 6.16.0(eslint@8.52.0)(typescript@5.2.2)
+        version: 6.16.0(eslint@8.52.0)(typescript@5.3.3)
       eslint:
         specifier: 8.52.0
         version: 8.52.0
@@ -72,7 +69,7 @@ importers:
         version: 50.0.1(eslint@8.52.0)
       eslint-plugin-vitest:
         specifier: 0.3.8
-        version: 0.3.8(@typescript-eslint/eslint-plugin@6.16.0)(eslint@8.52.0)(typescript@5.2.2)(vitest@1.2.1)
+        version: 0.3.8(@typescript-eslint/eslint-plugin@6.16.0)(eslint@8.52.0)(typescript@5.3.3)(vitest@1.2.1)
       husky:
         specifier: 8.0.3
         version: 8.0.3
@@ -92,8 +89,8 @@ importers:
         specifier: 4.9.6
         version: 4.9.6
       typescript:
-        specifier: 5.2.2
-        version: 5.2.2
+        specifier: 5.3.3
+        version: 5.3.3
       vite:
         specifier: 5.0.12
         version: 5.0.12(@types/node@18.19.3)(sass@1.70.0)
@@ -103,15 +100,15 @@ importers:
       '@ant-design/icons':
         specifier: 5.2.6
         version: 5.2.6(react-dom@18.2.0)(react@18.2.0)
-      '@apollo/client':
-        specifier: 3.8.10
-        version: 3.8.10(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@fontsource/roboto':
         specifier: 5.0.8
         version: 5.0.8
       '@learn-languages/common':
         specifier: workspace:^
         version: link:../common/dist
+      '@tanstack/react-query':
+        specifier: 5.17.19
+        version: 5.17.19(react@18.2.0)
       antd:
         specifier: ^5.13.2
         version: 5.13.2(react-dom@18.2.0)(react@18.2.0)
@@ -249,22 +246,22 @@ importers:
         version: 0.13.4
       '@nestjs/common':
         specifier: 10.3.0
-        version: 10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1)
+        version: 10.3.0(reflect-metadata@0.2.1)(rxjs@7.8.1)
       '@nestjs/config':
         specifier: 3.1.1
-        version: 3.1.1(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)
+        version: 3.1.1(@nestjs/common@10.3.0)(reflect-metadata@0.2.1)
       '@nestjs/core':
         specifier: 10.3.0
-        version: 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)(rxjs@7.8.1)
+        version: 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.2.1)(rxjs@7.8.1)
       '@nestjs/graphql':
         specifier: 12.0.11
-        version: 12.0.11(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(graphql@16.8.1)(reflect-metadata@0.1.14)
+        version: 12.0.11(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(graphql@16.8.1)(reflect-metadata@0.2.1)
       '@nestjs/mapped-types':
         specifier: 2.0.4
-        version: 2.0.4(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)
+        version: 2.0.4(@nestjs/common@10.3.0)(reflect-metadata@0.2.1)
       '@nestjs/mongoose':
         specifier: 10.0.2
-        version: 10.0.2(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(mongoose@7.6.8)(reflect-metadata@0.1.14)(rxjs@7.8.1)
+        version: 10.0.2(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(mongoose@7.6.8)(reflect-metadata@0.2.1)(rxjs@7.8.1)
       '@nestjs/platform-fastify':
         specifier: 10.3.0
         version: 10.3.0(@fastify/static@6.12.0)(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)
@@ -273,7 +270,10 @@ importers:
         version: 4.0.0(@fastify/static@6.12.0)(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(fastify@4.25.1)
       '@nestjs/swagger':
         specifier: 7.2.0
-        version: 7.2.0(@fastify/static@6.12.0)(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(reflect-metadata@0.1.14)
+        version: 7.2.0(@fastify/static@6.12.0)(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(reflect-metadata@0.2.1)
+      graphql:
+        specifier: 16.8.1
+        version: 16.8.1
       graphql-subscriptions:
         specifier: 2.0.0
         version: 2.0.0(graphql@16.8.1)
@@ -284,8 +284,8 @@ importers:
         specifier: 4.25.0
         version: 4.25.0
       reflect-metadata:
-        specifier: 0.1.14
-        version: 0.1.14
+        specifier: 0.2.1
+        version: 0.2.1
       rxjs:
         specifier: 7.8.1
         version: 7.8.1
@@ -462,41 +462,6 @@ packages:
       graphql: 14.x || 15.x || 16.x
     dependencies:
       graphql: 16.8.1
-    dev: false
-
-  /@apollo/client@3.8.10(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-p/22RZ8ehHyvySnC20EHPPe0gdu8Xp6ZCiXOfdEe1ZORw5cUteD/TLc66tfKv8qu8NLIfbiWoa+6s70XnKvxqg==}
-    peerDependencies:
-      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
-      graphql-ws: ^5.5.5
-      react: 18.2.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-      subscriptions-transport-ws: ^0.9.0 || ^0.11.0
-    peerDependenciesMeta:
-      graphql-ws:
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-      subscriptions-transport-ws:
-        optional: true
-    dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.1)
-      '@wry/equality': 0.5.7
-      '@wry/trie': 0.5.0
-      graphql: 16.8.1
-      graphql-tag: 2.12.6(graphql@16.8.1)
-      hoist-non-react-statics: 3.3.2
-      optimism: 0.18.0
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      response-iterator: 0.2.6
-      symbol-observable: 4.0.0
-      ts-invariant: 0.10.3
-      tslib: 2.6.2
-      zen-observable-ts: 1.2.5
     dev: false
 
   /@apollo/protobufjs@1.2.7:
@@ -1067,14 +1032,14 @@ packages:
     dev: true
     optional: true
 
-  /@commitlint/cli@18.2.0(typescript@5.2.2):
+  /@commitlint/cli@18.2.0(typescript@5.3.3):
     resolution: {integrity: sha512-F/DCG791kMFmWg5eIdogakuGeg4OiI2kD430ed1a1Hh3epvrJdeIAgcGADAMIOmF+m0S1+VlIYUKG2dvQQ1Izw==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
       '@commitlint/format': 18.1.0
       '@commitlint/lint': 18.1.0
-      '@commitlint/load': 18.2.0(typescript@5.2.2)
+      '@commitlint/load': 18.2.0(typescript@5.3.3)
       '@commitlint/read': 18.1.0
       '@commitlint/types': 18.1.0
       execa: 5.1.1
@@ -1160,7 +1125,7 @@ packages:
       '@commitlint/types': 18.1.0
     dev: true
 
-  /@commitlint/load@18.2.0(typescript@5.2.2):
+  /@commitlint/load@18.2.0(typescript@5.3.3):
     resolution: {integrity: sha512-xjX3d3CRlOALwImhOsmLYZh14/+gW/KxsY7+bPKrzmGuFailf9K7ckhB071oYZVJdACnpY4hDYiosFyOC+MpAA==}
     engines: {node: '>=v18'}
     dependencies:
@@ -1170,8 +1135,8 @@ packages:
       '@commitlint/types': 18.1.0
       '@types/node': 18.19.3
       chalk: 4.1.2
-      cosmiconfig: 8.3.6(typescript@5.2.2)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.19.3)(cosmiconfig@8.3.6)(typescript@5.2.2)
+      cosmiconfig: 8.3.6(typescript@5.3.3)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.19.3)(cosmiconfig@8.3.6)(typescript@5.3.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -2191,9 +2156,9 @@ packages:
       '@apollo/server': 4.10.0(graphql@16.8.1)
       '@apollo/server-plugin-landing-page-graphql-playground': 4.0.0(@apollo/server@4.10.0)
       '@as-integrations/fastify': 2.1.1(@apollo/server@4.10.0)(fastify@4.25.1)
-      '@nestjs/common': 10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      '@nestjs/graphql': 12.0.11(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(graphql@16.8.1)(reflect-metadata@0.1.14)
+      '@nestjs/common': 10.3.0(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/graphql': 12.0.11(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(graphql@16.8.1)(reflect-metadata@0.2.1)
       graphql: 16.8.1
       iterall: 1.3.0
       lodash.omit: 4.5.0
@@ -2252,7 +2217,7 @@ packages:
       - webpack-cli
     dev: true
 
-  /@nestjs/common@10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1):
+  /@nestjs/common@10.3.0(reflect-metadata@0.2.1)(rxjs@7.8.1):
     resolution: {integrity: sha512-DGv34UHsZBxCM3H5QGE2XE/+oLJzz5+714JQjBhjD9VccFlQs3LRxo/epso4l7nJIiNlZkPyIUC8WzfU/5RTsQ==}
     peerDependencies:
       class-transformer: '*'
@@ -2266,26 +2231,26 @@ packages:
         optional: true
     dependencies:
       iterare: 1.2.1
-      reflect-metadata: 0.1.14
+      reflect-metadata: 0.2.1
       rxjs: 7.8.1
       tslib: 2.6.2
       uid: 2.0.2
 
-  /@nestjs/config@3.1.1(@nestjs/common@10.3.0)(reflect-metadata@0.1.14):
+  /@nestjs/config@3.1.1(@nestjs/common@10.3.0)(reflect-metadata@0.2.1):
     resolution: {integrity: sha512-qu5QlNiJdqQtOsnB6lx4JCXPQ96jkKUsOGd+JXfXwqJqZcOSAq6heNFg0opW4pq4J/VZoNwoo87TNnx9wthnqQ==}
     peerDependencies:
       '@nestjs/common': ^8.0.0 || ^9.0.0 || ^10.0.0
       reflect-metadata: ^0.1.13
     dependencies:
-      '@nestjs/common': 10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1)
+      '@nestjs/common': 10.3.0(reflect-metadata@0.2.1)(rxjs@7.8.1)
       dotenv: 16.3.1
       dotenv-expand: 10.0.0
       lodash: 4.17.21
-      reflect-metadata: 0.1.14
+      reflect-metadata: 0.2.1
       uuid: 9.0.0
     dev: false
 
-  /@nestjs/core@10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)(rxjs@7.8.1):
+  /@nestjs/core@10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.2.1)(rxjs@7.8.1):
     resolution: {integrity: sha512-N06P5ncknW/Pm8bj964WvLIZn2gNhHliCBoAO1LeBvNImYkecqKcrmLbY49Fa1rmMfEM3MuBHeDys3edeuYAOA==}
     requiresBuild: true
     peerDependencies:
@@ -2303,19 +2268,19 @@ packages:
       '@nestjs/websockets':
         optional: true
     dependencies:
-      '@nestjs/common': 10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1)
+      '@nestjs/common': 10.3.0(reflect-metadata@0.2.1)(rxjs@7.8.1)
       '@nuxtjs/opencollective': 0.3.2
       fast-safe-stringify: 2.1.1
       iterare: 1.2.1
       path-to-regexp: 3.2.0
-      reflect-metadata: 0.1.14
+      reflect-metadata: 0.2.1
       rxjs: 7.8.1
       tslib: 2.6.2
       uid: 2.0.2
     transitivePeerDependencies:
       - encoding
 
-  /@nestjs/graphql@12.0.11(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(graphql@16.8.1)(reflect-metadata@0.1.14):
+  /@nestjs/graphql@12.0.11(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(graphql@16.8.1)(reflect-metadata@0.2.1):
     resolution: {integrity: sha512-iCyVs9+utCQt9ehMhUjQcEdjRN/MrcTBINd7P44O1fzGENuWMbt1Z8RCoZbeGi5iVPBY63HgYik+BnnICqmxZw==}
     peerDependencies:
       '@apollo/subgraph': ^2.0.0
@@ -2339,9 +2304,9 @@ packages:
       '@graphql-tools/merge': 9.0.0(graphql@16.8.1)
       '@graphql-tools/schema': 10.0.0(graphql@16.8.1)
       '@graphql-tools/utils': 10.0.8(graphql@16.8.1)
-      '@nestjs/common': 10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      '@nestjs/mapped-types': 2.0.2(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)
+      '@nestjs/common': 10.3.0(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/mapped-types': 2.0.2(@nestjs/common@10.3.0)(reflect-metadata@0.2.1)
       chokidar: 3.5.3
       fast-glob: 3.3.2
       graphql: 16.8.1
@@ -2349,7 +2314,7 @@ packages:
       graphql-ws: 5.14.2(graphql@16.8.1)
       lodash: 4.17.21
       normalize-path: 3.0.0
-      reflect-metadata: 0.1.14
+      reflect-metadata: 0.2.1
       subscriptions-transport-ws: 0.11.0(graphql@16.8.1)
       tslib: 2.6.2
       uuid: 9.0.1
@@ -2359,7 +2324,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@nestjs/mapped-types@2.0.2(@nestjs/common@10.3.0)(reflect-metadata@0.1.14):
+  /@nestjs/mapped-types@2.0.2(@nestjs/common@10.3.0)(reflect-metadata@0.2.1):
     resolution: {integrity: sha512-V0izw6tWs6fTp9+KiiPUbGHWALy563Frn8X6Bm87ANLRuE46iuBMD5acKBDP5lKL/75QFvrzSJT7HkCbB0jTpg==}
     peerDependencies:
       '@nestjs/common': ^8.0.0 || ^9.0.0 || ^10.0.0
@@ -2372,11 +2337,11 @@ packages:
       class-validator:
         optional: true
     dependencies:
-      '@nestjs/common': 10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      reflect-metadata: 0.1.14
+      '@nestjs/common': 10.3.0(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      reflect-metadata: 0.2.1
     dev: false
 
-  /@nestjs/mapped-types@2.0.4(@nestjs/common@10.3.0)(reflect-metadata@0.1.14):
+  /@nestjs/mapped-types@2.0.4(@nestjs/common@10.3.0)(reflect-metadata@0.2.1):
     resolution: {integrity: sha512-xl+gUSp0B+ln1VSNoUftlglk8dfpUes3DHGxKZ5knuBxS5g2H/8p9/DSBOYWUfO5f4u9s6ffBPZ71WO+tbe5SA==}
     peerDependencies:
       '@nestjs/common': ^8.0.0 || ^9.0.0 || ^10.0.0
@@ -2389,11 +2354,11 @@ packages:
       class-validator:
         optional: true
     dependencies:
-      '@nestjs/common': 10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      reflect-metadata: 0.1.14
+      '@nestjs/common': 10.3.0(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      reflect-metadata: 0.2.1
     dev: false
 
-  /@nestjs/mongoose@10.0.2(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(mongoose@7.6.8)(reflect-metadata@0.1.14)(rxjs@7.8.1):
+  /@nestjs/mongoose@10.0.2(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(mongoose@7.6.8)(reflect-metadata@0.2.1)(rxjs@7.8.1):
     resolution: {integrity: sha512-ITHh075DynjPIaKeJh6WkarS21WXYslu4nrLkNPbWaCP6JfxVAOftaA2X5tPSiiE/gNJWgs+QFWsfCFZUUenow==}
     peerDependencies:
       '@nestjs/common': ^8.0.0 || ^9.0.0 || ^10.0.0
@@ -2402,10 +2367,10 @@ packages:
       reflect-metadata: ^0.1.12
       rxjs: ^7.0.0
     dependencies:
-      '@nestjs/common': 10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)(rxjs@7.8.1)
+      '@nestjs/common': 10.3.0(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.2.1)(rxjs@7.8.1)
       mongoose: 7.6.8
-      reflect-metadata: 0.1.14
+      reflect-metadata: 0.2.1
       rxjs: 7.8.1
     dev: false
 
@@ -2426,8 +2391,8 @@ packages:
       '@fastify/formbody': 7.4.0
       '@fastify/middie': 8.3.0
       '@fastify/static': 6.12.0
-      '@nestjs/common': 10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)(rxjs@7.8.1)
+      '@nestjs/common': 10.3.0(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.2.1)(rxjs@7.8.1)
       fastify: 4.25.1
       light-my-request: 5.11.0
       path-to-regexp: 3.2.0
@@ -2468,13 +2433,13 @@ packages:
         optional: true
     dependencies:
       '@fastify/static': 6.12.0
-      '@nestjs/common': 10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)(rxjs@7.8.1)
+      '@nestjs/common': 10.3.0(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.2.1)(rxjs@7.8.1)
       fastify: 4.25.1
       path-to-regexp: 0.2.5
     dev: false
 
-  /@nestjs/swagger@7.2.0(@fastify/static@6.12.0)(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(reflect-metadata@0.1.14):
+  /@nestjs/swagger@7.2.0(@fastify/static@6.12.0)(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(reflect-metadata@0.2.1):
     resolution: {integrity: sha512-W7WPq561/79w27ZEgViXS7c5hqPwT7QXhsLsSeu2jeBROUhMM825QKDFKbMmtb643IW5dznJ4PjherlZZgtMvg==}
     peerDependencies:
       '@fastify/static': ^6.0.0
@@ -2492,13 +2457,13 @@ packages:
         optional: true
     dependencies:
       '@fastify/static': 6.12.0
-      '@nestjs/common': 10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      '@nestjs/mapped-types': 2.0.4(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)
+      '@nestjs/common': 10.3.0(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/mapped-types': 2.0.4(@nestjs/common@10.3.0)(reflect-metadata@0.2.1)
       js-yaml: 4.1.0
       lodash: 4.17.21
       path-to-regexp: 3.2.0
-      reflect-metadata: 0.1.14
+      reflect-metadata: 0.2.1
       swagger-ui-dist: 5.11.0
     dev: false
 
@@ -2515,8 +2480,8 @@ packages:
       '@nestjs/platform-express':
         optional: true
     dependencies:
-      '@nestjs/common': 10.3.0(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)(rxjs@7.8.1)
+      '@nestjs/common': 10.3.0(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/core': 10.3.0(@nestjs/common@10.3.0)(reflect-metadata@0.2.1)(rxjs@7.8.1)
       tslib: 2.6.2
     dev: true
 
@@ -3299,6 +3264,19 @@ packages:
       - typescript
     dev: true
 
+  /@tanstack/query-core@5.17.19:
+    resolution: {integrity: sha512-Lzw8FUtnLCc9Jwz0sw9xOjZB+/mCCmJev38v2wHMUl/ioXNIhnNWeMxu0NKUjIhAd62IRB3eAtvxAGDJ55UkyA==}
+    dev: false
+
+  /@tanstack/react-query@5.17.19(react@18.2.0):
+    resolution: {integrity: sha512-qaQENB6/03Gj3dFZGvdmUoqeUGlGm7P1p0RmaR04Bf1Ib1T9lLGimcC9T3oCFbrx0b2ZF21ngjFZNjj9uPJMcg==}
+    peerDependencies:
+      react: 18.2.0
+    dependencies:
+      '@tanstack/query-core': 5.17.19
+      react: 18.2.0
+    dev: false
+
   /@testing-library/dom@9.3.3:
     resolution: {integrity: sha512-fB0R+fa3AUqbLHWyxXa2kGVtf1Fe1ZZFr0Zp6AIbIAzXb2mKbEXl+PCQNUOaq5lbTab5tfctfXRNsWXxa2f7Aw==}
     engines: {node: '>=14'}
@@ -3681,7 +3659,7 @@ packages:
       '@types/yargs-parser': 21.0.3
     dev: true
 
-  /@typescript-eslint/eslint-plugin@6.16.0(@typescript-eslint/parser@6.16.0)(eslint@8.52.0)(typescript@5.2.2):
+  /@typescript-eslint/eslint-plugin@6.16.0(@typescript-eslint/parser@6.16.0)(eslint@8.52.0)(typescript@5.3.3):
     resolution: {integrity: sha512-O5f7Kv5o4dLWQtPX4ywPPa+v9G+1q1x8mz0Kr0pXUtKsevo+gIJHLkGc8RxaZWtP8RrhwhSNIWThnW42K9/0rQ==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -3693,10 +3671,10 @@ packages:
         optional: true
     dependencies:
       '@eslint-community/regexpp': 4.10.0
-      '@typescript-eslint/parser': 6.16.0(eslint@8.52.0)(typescript@5.2.2)
+      '@typescript-eslint/parser': 6.16.0(eslint@8.52.0)(typescript@5.3.3)
       '@typescript-eslint/scope-manager': 6.16.0
-      '@typescript-eslint/type-utils': 6.16.0(eslint@8.52.0)(typescript@5.2.2)
-      '@typescript-eslint/utils': 6.16.0(eslint@8.52.0)(typescript@5.2.2)
+      '@typescript-eslint/type-utils': 6.16.0(eslint@8.52.0)(typescript@5.3.3)
+      '@typescript-eslint/utils': 6.16.0(eslint@8.52.0)(typescript@5.3.3)
       '@typescript-eslint/visitor-keys': 6.16.0
       debug: 4.3.4
       eslint: 8.52.0
@@ -3704,8 +3682,8 @@ packages:
       ignore: 5.2.4
       natural-compare: 1.4.0
       semver: 7.5.4
-      ts-api-utils: 1.0.3(typescript@5.2.2)
-      typescript: 5.2.2
+      ts-api-utils: 1.0.3(typescript@5.3.3)
+      typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3739,7 +3717,7 @@ packages:
       - supports-color
     dev: false
 
-  /@typescript-eslint/parser@6.16.0(eslint@8.52.0)(typescript@5.2.2):
+  /@typescript-eslint/parser@6.16.0(eslint@8.52.0)(typescript@5.3.3):
     resolution: {integrity: sha512-H2GM3eUo12HpKZU9njig3DF5zJ58ja6ahj1GoHEHOgQvYxzoFJJEvC1MQ7T2l9Ha+69ZSOn7RTxOdpC/y3ikMw==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -3751,11 +3729,11 @@ packages:
     dependencies:
       '@typescript-eslint/scope-manager': 6.16.0
       '@typescript-eslint/types': 6.16.0
-      '@typescript-eslint/typescript-estree': 6.16.0(typescript@5.2.2)
+      '@typescript-eslint/typescript-estree': 6.16.0(typescript@5.3.3)
       '@typescript-eslint/visitor-keys': 6.16.0
       debug: 4.3.4
       eslint: 8.52.0
-      typescript: 5.2.2
+      typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3803,7 +3781,7 @@ packages:
       '@typescript-eslint/types': 6.9.1
       '@typescript-eslint/visitor-keys': 6.9.1
 
-  /@typescript-eslint/type-utils@6.16.0(eslint@8.52.0)(typescript@5.2.2):
+  /@typescript-eslint/type-utils@6.16.0(eslint@8.52.0)(typescript@5.3.3):
     resolution: {integrity: sha512-ThmrEOcARmOnoyQfYkHw/DX2SEYBalVECmoldVuH6qagKROp/jMnfXpAU/pAIWub9c4YTxga+XwgAkoA0pxfmg==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -3813,12 +3791,12 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@typescript-eslint/typescript-estree': 6.16.0(typescript@5.2.2)
-      '@typescript-eslint/utils': 6.16.0(eslint@8.52.0)(typescript@5.2.2)
+      '@typescript-eslint/typescript-estree': 6.16.0(typescript@5.3.3)
+      '@typescript-eslint/utils': 6.16.0(eslint@8.52.0)(typescript@5.3.3)
       debug: 4.3.4
       eslint: 8.52.0
-      ts-api-utils: 1.0.3(typescript@5.2.2)
-      typescript: 5.2.2
+      ts-api-utils: 1.0.3(typescript@5.3.3)
+      typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3878,7 +3856,7 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/typescript-estree@6.16.0(typescript@5.2.2):
+  /@typescript-eslint/typescript-estree@6.16.0(typescript@5.3.3):
     resolution: {integrity: sha512-VTWZuixh/vr7nih6CfrdpmFNLEnoVBF1skfjdyGnNwXOH1SLeHItGdZDHhhAIzd3ACazyY2Fg76zuzOVTaknGA==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -3894,8 +3872,8 @@ packages:
       is-glob: 4.0.3
       minimatch: 9.0.3
       semver: 7.5.4
-      ts-api-utils: 1.0.3(typescript@5.2.2)
-      typescript: 5.2.2
+      ts-api-utils: 1.0.3(typescript@5.3.3)
+      typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3920,6 +3898,27 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /@typescript-eslint/typescript-estree@6.9.1(typescript@5.3.3):
+    resolution: {integrity: sha512-U+mUylTHfcqeO7mLWVQ5W/tMLXqVpRv61wm9ZtfE5egz7gtnmqVIw9ryh0mgIlkKk9rZLY3UHygsBSdB9/ftyw==}
+    engines: {node: ^16.0.0 || >=18.0.0}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@typescript-eslint/types': 6.9.1
+      '@typescript-eslint/visitor-keys': 6.9.1
+      debug: 4.3.4
+      globby: 11.1.0
+      is-glob: 4.0.3
+      semver: 7.5.4
+      ts-api-utils: 1.0.3(typescript@5.3.3)
+      typescript: 5.3.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@typescript-eslint/utils@5.62.0(eslint@8.52.0)(typescript@5.3.3):
     resolution: {integrity: sha512-n8oxjeb5aIbPFEtmQxQYOLI0i9n5ySBEY/ZEHHZqKQSFnxio1rv6dthascc9dLuwrL0RC5mPCxB7vnAVGAYWAQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -3940,7 +3939,7 @@ packages:
       - typescript
     dev: true
 
-  /@typescript-eslint/utils@6.16.0(eslint@8.52.0)(typescript@5.2.2):
+  /@typescript-eslint/utils@6.16.0(eslint@8.52.0)(typescript@5.3.3):
     resolution: {integrity: sha512-T83QPKrBm6n//q9mv7oiSvy/Xq/7Hyw9SzSEhMHJwznEmQayfBM87+oAlkNAMEO7/MjIwKyOHgBJbxB0s7gx2A==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -3951,7 +3950,7 @@ packages:
       '@types/semver': 7.5.4
       '@typescript-eslint/scope-manager': 6.16.0
       '@typescript-eslint/types': 6.16.0
-      '@typescript-eslint/typescript-estree': 6.16.0(typescript@5.2.2)
+      '@typescript-eslint/typescript-estree': 6.16.0(typescript@5.3.3)
       eslint: 8.52.0
       semver: 7.5.4
     transitivePeerDependencies:
@@ -3976,6 +3975,26 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - typescript
+    dev: false
+
+  /@typescript-eslint/utils@6.9.1(eslint@8.52.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-L1T0A5nFdQrMVunpZgzqPL6y2wVreSyHhKGZryS6jrEN7bD9NplVAyMryUhXsQ4TWLnZmxc2ekar/lSGIlprCA==}
+    engines: {node: ^16.0.0 || >=18.0.0}
+    peerDependencies:
+      eslint: 8.52.0
+    dependencies:
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.52.0)
+      '@types/json-schema': 7.0.15
+      '@types/semver': 7.5.4
+      '@typescript-eslint/scope-manager': 6.9.1
+      '@typescript-eslint/types': 6.9.1
+      '@typescript-eslint/typescript-estree': 6.9.1(typescript@5.3.3)
+      eslint: 8.52.0
+      semver: 7.5.4
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: true
 
   /@typescript-eslint/visitor-keys@5.62.0:
     resolution: {integrity: sha512-07ny+LHRzQXepkGg6w0mFY41fVUNBrL2Roj/++7V1txKugfjm/Ci/qSND03r2RhlJhJYMcTn9AhhSSqQp0Ysyw==}
@@ -4246,41 +4265,6 @@ packages:
       '@webassemblyjs/ast': 1.11.6
       '@xtuc/long': 4.2.2
     dev: true
-
-  /@wry/caches@1.0.1:
-    resolution: {integrity: sha512-bXuaUNLVVkD20wcGBWRyo7j9N3TxePEWFZj2Y+r9OoUzfqmavM84+mFykRicNsBqatba5JLay1t48wxaXaWnlA==}
-    engines: {node: '>=8'}
-    dependencies:
-      tslib: 2.6.2
-    dev: false
-
-  /@wry/context@0.7.4:
-    resolution: {integrity: sha512-jmT7Sb4ZQWI5iyu3lobQxICu2nC/vbUhP0vIdd6tHC9PTfenmRmuIFqktc6GH9cgi+ZHnsLWPvfSvc4DrYmKiQ==}
-    engines: {node: '>=8'}
-    dependencies:
-      tslib: 2.6.2
-    dev: false
-
-  /@wry/equality@0.5.7:
-    resolution: {integrity: sha512-BRFORjsTuQv5gxcXsuDXx6oGRhuVsEGwZy6LOzRRfgu+eSfxbhUQ9L9YtSEIuIjY/o7g3iWFjrc5eSY1GXP2Dw==}
-    engines: {node: '>=8'}
-    dependencies:
-      tslib: 2.6.2
-    dev: false
-
-  /@wry/trie@0.4.3:
-    resolution: {integrity: sha512-I6bHwH0fSf6RqQcnnXLJKhkSXG45MFral3GxPaY4uAl0LYDZM+YDVDAiU9bYwjTuysy1S0IeecWtmq1SZA3M1w==}
-    engines: {node: '>=8'}
-    dependencies:
-      tslib: 2.6.2
-    dev: false
-
-  /@wry/trie@0.5.0:
-    resolution: {integrity: sha512-FNoYzHawTMk/6KMQoEG5O4PuioX19UbwdQKF44yw0nLfOypfQdjtfZzo/UIJWAJ23sNIFbD1Ug9lbaDGMwbqQA==}
-    engines: {node: '>=8'}
-    dependencies:
-      tslib: 2.6.2
-    dev: false
 
   /@xtuc/ieee754@1.2.0:
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -4771,7 +4755,7 @@ packages:
   /axios@1.6.0:
     resolution: {integrity: sha512-EZ1DYihju9pwVB+jg67ogm+Tmqc6JmhamRN6I4Zt8DfZu5lbcQGw3ozH9lFejSJgs/ibaef3A9PMXPLeefFGJg==}
     dependencies:
-      follow-redirects: 1.15.3
+      follow-redirects: 1.15.4
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -5562,7 +5546,7 @@ packages:
       vary: 1.1.2
     dev: false
 
-  /cosmiconfig-typescript-loader@5.0.0(@types/node@18.19.3)(cosmiconfig@8.3.6)(typescript@5.2.2):
+  /cosmiconfig-typescript-loader@5.0.0(@types/node@18.19.3)(cosmiconfig@8.3.6)(typescript@5.3.3):
     resolution: {integrity: sha512-+8cK7jRAReYkMwMiG+bxhcNKiHJDM6bR9FD/nGBXOWdMLuYawjF5cGrtLilJ+LGd3ZjCXnJjR5DkfWPoIVlqJA==}
     engines: {node: '>=v16'}
     peerDependencies:
@@ -5571,9 +5555,9 @@ packages:
       typescript: '>=4'
     dependencies:
       '@types/node': 18.19.3
-      cosmiconfig: 8.3.6(typescript@5.2.2)
+      cosmiconfig: 8.3.6(typescript@5.3.3)
       jiti: 1.21.0
-      typescript: 5.2.2
+      typescript: 5.3.3
     dev: true
 
   /cosmiconfig@7.1.0:
@@ -5585,22 +5569,6 @@ packages:
       parse-json: 5.2.0
       path-type: 4.0.0
       yaml: 1.10.2
-    dev: true
-
-  /cosmiconfig@8.3.6(typescript@5.2.2):
-    resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      typescript: '>=4.9.5'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      import-fresh: 3.3.0
-      js-yaml: 4.1.0
-      parse-json: 5.2.0
-      path-type: 4.0.0
-      typescript: 5.2.2
     dev: true
 
   /cosmiconfig@8.3.6(typescript@5.3.3):
@@ -6257,8 +6225,8 @@ packages:
       eslint: 8.52.0
       eslint-plugin-import: ^2.25.3
     dependencies:
-      '@typescript-eslint/eslint-plugin': 6.16.0(@typescript-eslint/parser@6.16.0)(eslint@8.52.0)(typescript@5.2.2)
-      '@typescript-eslint/parser': 6.16.0(eslint@8.52.0)(typescript@5.2.2)
+      '@typescript-eslint/eslint-plugin': 6.16.0(@typescript-eslint/parser@6.16.0)(eslint@8.52.0)(typescript@5.3.3)
+      '@typescript-eslint/parser': 6.16.0(eslint@8.52.0)(typescript@5.3.3)
       eslint: 8.52.0
       eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.29.0)(eslint@8.52.0)
       eslint-plugin-import: 2.29.0(@typescript-eslint/parser@6.16.0)(eslint@8.52.0)
@@ -6317,7 +6285,7 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 6.16.0(eslint@8.52.0)(typescript@5.2.2)
+      '@typescript-eslint/parser': 6.16.0(eslint@8.52.0)(typescript@5.3.3)
       debug: 3.2.7
       eslint: 8.52.0
       eslint-import-resolver-node: 0.3.9
@@ -6363,7 +6331,7 @@ packages:
       '@typescript-eslint/parser':
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 6.16.0(eslint@8.52.0)(typescript@5.2.2)
+      '@typescript-eslint/parser': 6.16.0(eslint@8.52.0)(typescript@5.3.3)
       array-includes: 3.1.7
       array.prototype.findlastindex: 1.2.3
       array.prototype.flat: 1.3.2
@@ -6525,7 +6493,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-vitest@0.3.8(@typescript-eslint/eslint-plugin@6.16.0)(eslint@8.52.0)(typescript@5.2.2)(vitest@1.2.1):
+  /eslint-plugin-vitest@0.3.8(@typescript-eslint/eslint-plugin@6.16.0)(eslint@8.52.0)(typescript@5.3.3)(vitest@1.2.1):
     resolution: {integrity: sha512-MYQJzg3i+nLkaIQgjnOhtqHYIt0W6nErqAOKI3LTSQ2aOgcNHGYTwOhpnwGC1IXTvGWjKgAwb7rHwLpcHWHSAQ==}
     engines: {node: 14.x || >= 16}
     peerDependencies:
@@ -6536,8 +6504,8 @@ packages:
       '@typescript-eslint/eslint-plugin':
         optional: true
     dependencies:
-      '@typescript-eslint/eslint-plugin': 6.16.0(@typescript-eslint/parser@6.16.0)(eslint@8.52.0)(typescript@5.2.2)
-      '@typescript-eslint/utils': 6.9.1(eslint@8.52.0)(typescript@5.2.2)
+      '@typescript-eslint/eslint-plugin': 6.16.0(@typescript-eslint/parser@6.16.0)(eslint@8.52.0)(typescript@5.3.3)
+      '@typescript-eslint/utils': 6.9.1(eslint@8.52.0)(typescript@5.3.3)
       eslint: 8.52.0
       vitest: 1.2.1(@types/node@18.19.3)(@vitest/ui@1.2.1)(jsdom@23.0.1)(sass@1.70.0)
     transitivePeerDependencies:
@@ -7009,8 +6977,8 @@ packages:
   /flatted@3.2.9:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
 
-  /follow-redirects@1.15.3:
-    resolution: {integrity: sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==}
+  /follow-redirects@1.15.4:
+    resolution: {integrity: sha512-Cr4D/5wlrb0z9dgERpUL3LrmPKVDsETIJhaCMeDfuFYcqa5bldGV6wBsAN6X/vxlXQtFBMrXdXxdL8CbDTGniw==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -7535,12 +7503,6 @@ packages:
     resolution: {integrity: sha512-QFLV0taWQOZtvIRIAdBChesmogZrtuXvVWsFHZTk2SU+anspqZ2vMnoLg7IE1+Uk16N19APic1BuF8bC8c2m5g==}
     engines: {node: '>=8'}
     dev: true
-
-  /hoist-non-react-statics@3.3.2:
-    resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
-    dependencies:
-      react-is: 16.13.1
-    dev: false
 
   /hosted-git-info@2.8.9:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
@@ -10170,15 +10132,6 @@ packages:
       - encoding
     dev: false
 
-  /optimism@0.18.0:
-    resolution: {integrity: sha512-tGn8+REwLRNFnb9WmcY5IfpOqeX2kpaYJ1s6Ae3mn12AeydLkR3j+jSCmVQFoXqU8D41PAJ1RG1rCRNWmNZVmQ==}
-    dependencies:
-      '@wry/caches': 1.0.1
-      '@wry/context': 0.7.4
-      '@wry/trie': 0.4.3
-      tslib: 2.6.2
-    dev: false
-
   /optionator@0.9.3:
     resolution: {integrity: sha512-JjCoypp+jKn1ttEFExxhetCKeJt9zhAgAve5FXHixTvFDW/5aEktX9bufBKLRRMdU7bNtpLfcGu94B3cdEJgjg==}
     engines: {node: '>= 0.8.0'}
@@ -10671,6 +10624,7 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
+    dev: true
 
   /property-expr@2.0.6:
     resolution: {integrity: sha512-SVtmxhRE/CGkn3eZY1T6pC8Nln6Fr/lu1mKSgRud0eC73whjGfoAogbn78LkD8aFL0zz3bAFerKSnOl7NlErBA==}
@@ -11296,6 +11250,7 @@ packages:
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: true
 
   /react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
@@ -11472,8 +11427,8 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
-  /reflect-metadata@0.1.14:
-    resolution: {integrity: sha512-ZhYeb6nRaXCfhnndflDK8qI6ZQ/YcWZCISRAWICW9XYqMUwjZM9Z0DveWX/ABN01oxSHwVxKQmxeYZSsm0jh5A==}
+  /reflect-metadata@0.2.1:
+    resolution: {integrity: sha512-i5lLI6iw9AU3Uu4szRNPPEkomnkjRTaVt9hy/bn5g/oSzekBSMeLZblcjP74AW0vBabqERLLIrz+gR8QYR54Tw==}
 
   /reflect.getprototypeof@1.0.4:
     resolution: {integrity: sha512-ECkTw8TmJwW60lOTR+ZkODISW6RQ8+2CL3COqtiJKLd6MmB45hN51HprHFziKLGkAuTGQhBb91V8cy+KHlaCjw==}
@@ -11583,11 +11538,6 @@ packages:
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
     dev: true
-
-  /response-iterator@0.2.6:
-    resolution: {integrity: sha512-pVzEEzrsg23Sh053rmDUvLSkGXluZio0qu8VT6ukrYuvtjVfCbDZH9d6PGXb8HZfzdNZt8feXv/jvUzlhRgLnw==}
-    engines: {node: '>=0.8'}
-    dev: false
 
   /restore-cursor@3.1.0:
     resolution: {integrity: sha512-l+sSefzHpj5qimhFSE5a8nufZYAM3sBSVMAPtYkmC+4EH2anSGaEMXSD0izRQbu9nfyQ9y5JrVmp7E8oZrUjvA==}
@@ -12398,6 +12348,7 @@ packages:
   /symbol-observable@4.0.0:
     resolution: {integrity: sha512-b19dMThMV4HVFynSAM1++gBHAbk2Tc/osgLIBZMKsyqh34jb2e8Os7T6ZW/Bt3pJFdBTd2JwAnAAEQV7rSNvcQ==}
     engines: {node: '>=0.10'}
+    dev: true
 
   /symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
@@ -12657,12 +12608,14 @@ packages:
     dependencies:
       typescript: 5.2.2
 
-  /ts-invariant@0.10.3:
-    resolution: {integrity: sha512-uivwYcQaxAucv1CzRp2n/QdYPo4ILf9VXgH19zEIjFx2EJufV16P0JtJVpYHy89DItG6Kwj2oIUjrcK5au+4tQ==}
-    engines: {node: '>=8'}
+  /ts-api-utils@1.0.3(typescript@5.3.3):
+    resolution: {integrity: sha512-wNMeqtMz5NtwpT/UZGY5alT+VoKdSsOOP/kqHFcUW1P/VRhH2wJ48+DN2WwUliNbQ976ETwDL0Ifd2VVvgonvg==}
+    engines: {node: '>=16.13.0'}
+    peerDependencies:
+      typescript: '>=4.2.0'
     dependencies:
-      tslib: 2.6.2
-    dev: false
+      typescript: 5.3.3
+    dev: true
 
   /ts-jest@29.1.2(@babel/core@7.23.6)(jest@29.7.0)(typescript@5.3.3):
     resolution: {integrity: sha512-br6GJoH/WUX4pu7FbZXuWGKGNDuU7b8Uj77g/Sp7puZV6EXzuByl6JrECvm0MzVzSTkSHWTihsXt+5XYER5b+g==}
@@ -13714,16 +13667,6 @@ packages:
     optionalDependencies:
       commander: 9.5.0
     dev: true
-
-  /zen-observable-ts@1.2.5:
-    resolution: {integrity: sha512-QZWQekv6iB72Naeake9hS1KxHlotfRpe+WGNbNx5/ta+R3DNjVO2bswf63gXlWDcs+EMd7XY8HfVQyP1X6T4Zg==}
-    dependencies:
-      zen-observable: 0.8.15
-    dev: false
-
-  /zen-observable@0.8.15:
-    resolution: {integrity: sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==}
-    dev: false
 
   /zustand@4.5.0(@types/react@18.2.46)(react@18.2.0):
     resolution: {integrity: sha512-zlVFqS5TQ21nwijjhJlx4f9iGrXSL0o/+Dpy4txAP22miJ8Ti6c1Ol1RLNN98BMib83lmDH/2KmLwaNXpjrO1A==}
