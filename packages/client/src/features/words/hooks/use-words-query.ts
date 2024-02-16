@@ -1,20 +1,44 @@
+import type { QueryResult } from '@apollo/client';
+import { gql, useQuery } from '@apollo/client';
 import type { IWord } from '@learn-languages/common';
-import type { UseQueryOptions, UseQueryResult } from '@tanstack/react-query';
-import { useQuery } from '@tanstack/react-query';
 
-import { httpClient } from 'common/http-client';
-import { WORD_LIST_QUERY_KEY } from 'features/words/words-constants';
+export const GET_SIMPLE_WORD_LIST = gql`
+  query GetWords {
+    words {
+      name
+    }
+  }
+`;
 
-export const useWordsQuery = (
-  { refetchOnMount = false, enabled = false, ...restProps }: Omit<UseQueryOptions<IWord[]>, 'queryKey' | 'queryFn'> = {
-    enabled: false,
-    refetchOnMount: false,
-  },
-): UseQueryResult<IWord[]> =>
-  useQuery<IWord[]>({
-    ...restProps,
-    enabled: enabled,
-    queryFn: () => httpClient.get('words').json(),
-    queryKey: WORD_LIST_QUERY_KEY,
-    refetchOnMount: refetchOnMount,
-  });
+export const GET_DETAILED_WORD_LIST = gql`
+  query GetWords {
+    words {
+      _id
+      name
+      lang
+      description
+      examples
+    }
+  }
+`;
+
+export interface WordsData {
+  words: IWord[];
+}
+
+export interface WordsQueryResult extends Omit<QueryResult<WordsData>, 'data'> {
+  words: IWord[];
+}
+
+const emptyWords: IWord[] = [];
+
+const defaultData: WordsData = { words: emptyWords };
+
+export const useWordsQuery = (query = GET_SIMPLE_WORD_LIST): WordsQueryResult => {
+  const { data = defaultData, ...rest } = useQuery<WordsData>(query);
+  const { words = [] } = data;
+  return {
+    ...rest,
+    words,
+  };
+};

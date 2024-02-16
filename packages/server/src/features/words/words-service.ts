@@ -29,7 +29,7 @@ export class WordsService {
   }
 
   async delete(id: string): Promise<Word> {
-    const word = await this.wordModel.findByIdAndRemove(id).exec();
+    const word = await this.wordModel.findByIdAndDelete(id).exec();
     return this.returnIfExists(id, word);
   }
 

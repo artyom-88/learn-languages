@@ -1,5 +1,5 @@
 import type { JSX } from 'react';
-import { Fragment, useCallback, useEffect } from 'react';
+import { Fragment, useCallback } from 'react';
 import { NavLink, useNavigate, useOutlet, useParams } from 'react-router-dom';
 
 import { PlusCircleOutlined, ReloadOutlined } from '@ant-design/icons';
@@ -8,20 +8,16 @@ import { Button, Col, Divider, Row, Skeleton, Space, Typography } from 'antd';
 
 import LoadingPage from 'common/components/LoadingPage';
 import { WORD_NAME_PARAM, WORDS_URL } from 'common/routes/routes-constants';
-import { useWordsQuery } from 'features/words/hooks/use-words-query';
+import { GET_DETAILED_WORD_LIST, useWordsQuery } from 'features/words/hooks/use-words-query';
 
 const rowGutter = 36;
 
 const WordsPage = (): JSX.Element => {
-  const { data = [], isFetching, isLoading, refetch } = useWordsQuery({ enabled: true });
+  const { words = [], loading, refetch } = useWordsQuery(GET_DETAILED_WORD_LIST);
   const navigate = useNavigate();
   const { [WORD_NAME_PARAM]: wordName = '' } = useParams<Record<string, string>>();
   const handleAdd = useCallback(() => navigate(`${WORDS_URL}/_new`), [navigate]);
   const handleRefetchClick = useCallback(() => refetch(), [refetch]);
-
-  useEffect(() => {
-    console.log('data', data);
-  }, [data]);
 
   const renderItem = useCallback(
     ({ description = [], name, examples = [] }: IWord) => (
@@ -61,9 +57,9 @@ const WordsPage = (): JSX.Element => {
         <Space className='full-width' direction='vertical'>
           <Space align='center' className='flex justify-end'>
             <Button disabled={!!wordName} icon={<PlusCircleOutlined />} onClick={handleAdd} />
-            <Button icon={<ReloadOutlined />} loading={isFetching} onClick={handleRefetchClick} />
+            <Button icon={<ReloadOutlined />} loading={loading} onClick={handleRefetchClick} />
           </Space>
-          {data.length ? (
+          {words.length ? (
             <>
               <Row gutter={rowGutter}>
                 <Col span={4}>
@@ -76,7 +72,7 @@ const WordsPage = (): JSX.Element => {
                   <Typography.Title level={5}>Examples</Typography.Title>
                 </Col>
               </Row>
-              <Skeleton loading={isFetching}>{data.map(renderItem)}</Skeleton>
+              <Skeleton loading={loading}>{words.map(renderItem)}</Skeleton>
             </>
           ) : (
             <div>No words have been added yet</div>
@@ -85,7 +81,7 @@ const WordsPage = (): JSX.Element => {
       </Col>
       {showOutlet ? (
         <Col className='full-height' span={12}>
-          {isLoading ? <LoadingPage /> : outlet}
+          {loading ? <LoadingPage /> : outlet}
         </Col>
       ) : null}
     </Row>
