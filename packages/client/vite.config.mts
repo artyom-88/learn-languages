@@ -34,7 +34,7 @@ export default defineConfig(({ mode }): UserConfig => {
         output: {
           manualChunks: {
             antd: ['antd', '@ant-design/icons'],
-            vendors: ['react', 'react-dom', 'react-router-dom', 'ky', 'yup', 'zustand'],
+            vendors: ['react', 'react-dom', 'react-router-dom', 'ky', 'zustand'],
           },
         },
       },
