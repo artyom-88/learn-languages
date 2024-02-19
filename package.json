@@ -31,6 +31,7 @@
     "update:all": "pnpm dlx npm-check-updates -i -u -ws"
   },
   "dependencies": {
+    "@fastify/static": "7.0.1",
     "dayjs": "1.11.10",
     "graphql": "16.8.1",
     "react": "18.2.0"
@@ -63,6 +64,7 @@
   },
   "pnpm": {
     "overrides": {
+      "@fastify/static": "$@fastify/static",
       "cacache": ">=17.1.4",
       "eslint": "$eslint",
       "lerna": "$lerna",
