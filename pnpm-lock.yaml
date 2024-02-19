@@ -131,8 +131,8 @@ importers:
         specifier: 1.3.3
         version: 1.3.3
       zustand:
-        specifier: 4.5.0
-        version: 4.5.0(@types/react@18.2.56)(react@18.2.0)
+        specifier: 4.5.1
+        version: 4.5.1(@types/react@18.2.56)(react@18.2.0)
     devDependencies:
       '@learn-languages/eslint-common':
         specifier: workspace:^
@@ -13741,8 +13741,8 @@ packages:
     resolution: {integrity: sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==}
     dev: false
 
-  /zustand@4.5.0(@types/react@18.2.56)(react@18.2.0):
-    resolution: {integrity: sha512-zlVFqS5TQ21nwijjhJlx4f9iGrXSL0o/+Dpy4txAP22miJ8Ti6c1Ol1RLNN98BMib83lmDH/2KmLwaNXpjrO1A==}
+  /zustand@4.5.1(@types/react@18.2.56)(react@18.2.0):
+    resolution: {integrity: sha512-XlauQmH64xXSC1qGYNv00ODaQ3B+tNPoy22jv2diYiP4eoDKr9LA+Bh5Bc3gplTrFdb6JVI+N4kc1DZ/tbtfPg==}
     engines: {node: '>=12.7.0'}
     peerDependencies:
       '@types/react': '>=16.8'
