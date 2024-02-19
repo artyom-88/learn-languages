@@ -96,7 +96,7 @@ importers:
         version: 5.3.3
       vite:
         specifier: 5.1.3
-        version: 5.1.3(@types/node@20.11.19)
+        version: 5.1.3(@types/node@20.11.19)(sass@1.71.0)
 
   packages/client:
     dependencies:
@@ -125,8 +125,8 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       react-router-dom:
-        specifier: 6.22.0
-        version: 6.22.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: 6.22.1
+        version: 6.22.1(react-dom@18.2.0)(react@18.2.0)
       yup:
         specifier: 1.3.3
         version: 1.3.3
@@ -151,10 +151,10 @@ importers:
         version: 18.2.19
       '@vitejs/plugin-basic-ssl':
         specifier: 1.1.0
-        version: 1.1.0(vite@5.0.12)
+        version: 1.1.0(vite@5.1.3)
       '@vitejs/plugin-react':
         specifier: 4.2.1
-        version: 4.2.1(vite@5.0.12)
+        version: 4.2.1(vite@5.1.3)
       '@vitest/ui':
         specifier: 1.3.0
         version: 1.3.0(vitest@1.3.0)
@@ -3006,8 +3006,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@remix-run/router@1.15.0:
-    resolution: {integrity: sha512-HOil5aFtme37dVQTB6M34G95kPM3MMuqSmIRVCC52eKV+Y/tGSqw9P3rWhlAx6A+mz+MoX+XxsGsNJbaI5qCgQ==}
+  /@remix-run/router@1.15.1:
+    resolution: {integrity: sha512-zcU0gM3z+3iqj8UX45AmWY810l3oUmXM7uH4dt5xtzvMhRtYVhKGOmgOd1877dOPPepfCjUv57w+syamWIYe7w==}
     engines: {node: '>=14.0.0'}
     dev: false
 
@@ -3946,16 +3946,16 @@ packages:
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  /@vitejs/plugin-basic-ssl@1.1.0(vite@5.0.12):
+  /@vitejs/plugin-basic-ssl@1.1.0(vite@5.1.3):
     resolution: {integrity: sha512-wO4Dk/rm8u7RNhOf95ZzcEmC9rYOncYgvq4z3duaJrCgjN8BxAnDVyndanfcJZ0O6XZzHz6Q0hTimxTg8Y9g/A==}
     engines: {node: '>=14.6.0'}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0
     dependencies:
-      vite: 5.0.12(@types/node@20.11.19)(sass@1.71.0)
+      vite: 5.1.3(@types/node@20.11.19)(sass@1.71.0)
     dev: true
 
-  /@vitejs/plugin-react@4.2.1(vite@5.0.12):
+  /@vitejs/plugin-react@4.2.1(vite@5.1.3):
     resolution: {integrity: sha512-oojO9IDc4nCUUi8qIR11KoQm0XFFLIwsRBwHRR4d/88IWghn1y6ckz/bJ8GHDCsYEJee8mDzqtJxh15/cisJNQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -3966,7 +3966,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.23.3(@babel/core@7.23.6)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.0
-      vite: 5.0.12(@types/node@20.11.19)(sass@1.71.0)
+      vite: 5.1.3(@types/node@20.11.19)(sass@1.71.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -11294,26 +11294,26 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-router-dom@6.22.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-z2w+M4tH5wlcLmH3BMMOMdrtrJ9T3oJJNsAlBJbwk+8Syxd5WFJ7J5dxMEW0/GEXD1BBis4uXRrNIz3mORr0ag==}
+  /react-router-dom@6.22.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-iwMyyyrbL7zkKY7MRjOVRy+TMnS/OPusaFVxM2P11x9dzSzGmLsebkCvYirGq0DWB9K9hOspHYYtDz33gE5Duw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: 18.2.0
       react-dom: '>=16.8'
     dependencies:
-      '@remix-run/router': 1.15.0
+      '@remix-run/router': 1.15.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      react-router: 6.22.0(react@18.2.0)
+      react-router: 6.22.1(react@18.2.0)
     dev: false
 
-  /react-router@6.22.0(react@18.2.0):
-    resolution: {integrity: sha512-q2yemJeg6gw/YixRlRnVx6IRJWZD6fonnfZhN1JIOhV2iJCPeRNSH3V1ISwHf+JWcESzLC3BOLD1T07tmO5dmg==}
+  /react-router@6.22.1(react@18.2.0):
+    resolution: {integrity: sha512-0pdoRGwLtemnJqn1K0XHUbnKiX0S4X8CgvVVmHGOWmofESj31msHo/1YiqcJWK7Wxfq2a4uvvtS01KAQyWK/CQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: 18.2.0
     dependencies:
-      '@remix-run/router': 1.15.0
+      '@remix-run/router': 1.15.1
       react: 18.2.0
     dev: false
 
@@ -13144,7 +13144,7 @@ packages:
       debug: 4.3.4
       kolorist: 1.8.0
       typescript: 5.3.3
-      vite: 5.1.3(@types/node@20.11.19)
+      vite: 5.1.3(@types/node@20.11.19)(sass@1.71.0)
       vue-tsc: 1.8.27(typescript@5.3.3)
     transitivePeerDependencies:
       - '@types/node'
@@ -13189,7 +13189,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vite@5.1.3(@types/node@20.11.19):
+  /vite@5.1.3(@types/node@20.11.19)(sass@1.71.0):
     resolution: {integrity: sha512-UfmUD36DKkqhi/F75RrxvPpry+9+tTkrXfMNZD+SboZqBCMsxKtO52XeGzzuh7ioz+Eo/SYDBbdb0Z7vgcDJew==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -13221,6 +13221,7 @@ packages:
       esbuild: 0.19.10
       postcss: 8.4.35
       rollup: 4.9.6
+      sass: 1.71.0
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
