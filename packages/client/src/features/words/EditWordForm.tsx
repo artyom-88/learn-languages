@@ -72,7 +72,6 @@ const EditWordForm = (): JSX.Element => {
 
   const onFinish = useCallback(
     (values: Partial<IWord>) => {
-      debugger;
       void handleSave({ variables: { dto: values } });
     },
     [handleSave],
