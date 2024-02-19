@@ -23,7 +23,6 @@
   "dependencies": {
     "@apollo/server": "4.10.0",
     "@as-integrations/fastify": "2.1.1",
-    "@fastify/static": "7.0.1",
     "@learn-languages/common": "workspace:^",
     "@nestjs/apollo": "12.1.0",
     "@nestjs/class-transformer": "0.4.0",
