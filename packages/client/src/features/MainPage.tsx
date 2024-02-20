@@ -12,9 +12,9 @@ const MainPage = (): JSX.Element => {
   const { words, refetch, loading } = useWordsQuery();
   const handleRefetchClick = useCallback(() => refetch(), [refetch]);
   return (
-    <Space align='center' className='full-height full-width' direction='vertical'>
+    <Space className='full-height full-width' direction='vertical'>
       <Button icon={<ReloadOutlined />} loading={loading} onClick={handleRefetchClick} />
-      <Space>
+      <Space align='center'>
         {words.length ? (
           words.map(({ name }) => (
             <NavLink key={name} to={`${WORDS_URL}/${name}`}>

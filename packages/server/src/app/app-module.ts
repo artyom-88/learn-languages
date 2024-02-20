@@ -23,11 +23,7 @@ import { AppController } from './app-controller';
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => {
         const uri = configService.get('DB_URI');
-        return {
-          uri: uri,
-          useNewUrlParser: true,
-          useUnifiedTopology: true,
-        };
+        return { uri: uri };
       },
     }),
     ServeStaticModule.forRoot({
@@ -45,10 +41,12 @@ import { AppController } from './app-controller';
         const isProd = configService.get('NODE_ENV') === 'production';
         return {
           autoSchemaFile: true, // join(process.cwd(), 'src/schema.gql'),
-          installSubscriptionHandlers: true,
           playground: false,
           plugins: isProd ? [] : [ApolloServerPluginLandingPageLocalDefault()],
           sortSchema: true,
+          subscriptions: {
+            'graphql-ws': true,
+          },
         };
       },
     }),

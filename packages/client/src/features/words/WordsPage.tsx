@@ -55,7 +55,7 @@ const WordsPage = (): JSX.Element => {
     <Row className='full-height full-width' gutter={rowGutter}>
       <Col className='full-height scroll-y' span={listSpan}>
         <Space className='full-width' direction='vertical'>
-          <Space align='center' className='flex justify-end'>
+          <Space align='center' className='flex'>
             <Button disabled={!!wordName} icon={<PlusCircleOutlined />} onClick={handleAdd} />
             <Button icon={<ReloadOutlined />} loading={loading} onClick={handleRefetchClick} />
           </Space>

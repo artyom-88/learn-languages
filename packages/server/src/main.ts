@@ -7,6 +7,7 @@ import { PORT } from './common/common-constants';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(AppModule, new FastifyAdapter());
+  app.setGlobalPrefix('api');
   app.enableCors({
     origin: [/https?:\/\/localhost:[\d]{4}/],
   });
