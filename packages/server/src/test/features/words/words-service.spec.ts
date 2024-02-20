@@ -6,7 +6,7 @@ import type { Model } from 'mongoose';
 import type { Word } from '../../../features/words/words-schema';
 import { WordsService } from '../../../features/words/words-service';
 
-import { createWord1Dto, modelName, mockWord1, mockWordList } from './words-mocks';
+import { createWord1Dto, mockWord1, mockWordList, modelName } from './words-mocks';
 
 describe('WordsService', () => {
   let service: WordsService;
@@ -19,11 +19,12 @@ describe('WordsService', () => {
         {
           provide: getModelToken(modelName),
           useValue: {
-            new: jest.fn().mockResolvedValue(mockWord1),
             constructor: jest.fn().mockResolvedValue(mockWord1),
-            find: jest.fn(),
             create: jest.fn(),
             exec: jest.fn(),
+            find: jest.fn(),
+            findOne: jest.fn(),
+            new: jest.fn().mockResolvedValue(mockWord1),
           },
         },
       ],
@@ -45,8 +46,22 @@ describe('WordsService', () => {
   });
 
   it('should insert a new word', async () => {
+    jest.spyOn(model, 'findOne').mockReturnValue({
+      exec: jest.fn().mockResolvedValueOnce(null),
+    } as any);
     jest.spyOn(model, 'create').mockImplementationOnce(() => Promise.resolve(mockWord1 as any));
     const newWord = await service.create(createWord1Dto);
     expect(newWord).toEqual(mockWord1);
+  });
+
+  it('should throw an error if the word exists', async () => {
+    try {
+      jest.spyOn(model, 'findOne').mockReturnValue({
+        exec: jest.fn().mockResolvedValueOnce(mockWord1),
+      } as any);
+      await service.create(createWord1Dto);
+    } catch (e: any) {
+      expect(e.message).toBe(`A word with name: "${createWord1Dto.name}" already exists`);
+    }
   });
 });

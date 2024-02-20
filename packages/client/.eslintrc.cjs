@@ -12,8 +12,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:vitest/recommended',
-    'prettier',
-    'plugin:@tanstack/eslint-plugin-query/recommended',
+    'prettier'
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -24,7 +23,7 @@ module.exports = {
     sourceType: 'module',
     tsconfigRootDir: __dirname,
   },
-  plugins: [...config.plugins, 'react', 'react-hooks', 'vitest', '@tanstack/query'],
+  plugins: [...config.plugins, 'react', 'react-hooks', 'vitest'],
   rules: {
     ...config.rules,
     '@typescript-eslint/consistent-type-imports': [

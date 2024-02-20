@@ -3,7 +3,6 @@ import { useCallback, useEffect, useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 import type { IWord } from '@learn-languages/common';
-import { EMPTY_ARRAY } from '@learn-languages/common';
 import type { FormListFieldData, FormListOperation, FormRule } from 'antd';
 import { App, Button, Card, Form, Input, Space } from 'antd';
 
@@ -25,10 +24,10 @@ const nameRules: FormRule[] = [{ required: true, message: 'Please enter word' }]
 const EditWordForm = (): JSX.Element => {
   const { [WORD_NAME_PARAM]: wordName } = useParams<Record<string, string>>();
   const isNew = wordName === NEW_ID_PARAM;
-  const { data: wordList = EMPTY_ARRAY<IWord[]>(), isFetching } = useWordsQuery();
+  const { words, loading } = useWordsQuery();
   const initialValues = useMemo<Partial<IWord>>(
-    () => (isNew ? emptyForm : wordList.find(({ name }) => name === wordName) ?? emptyForm),
-    [wordList, isNew, wordName],
+    () => (isNew ? emptyForm : words.find(({ name }) => name === wordName) ?? emptyForm),
+    [words, isNew, wordName],
   );
   const { _id: wordId, name: initialName } = initialValues;
   const [form] = Form.useForm();
@@ -69,17 +68,25 @@ const EditWordForm = (): JSX.Element => {
   );
 
   // TODO: it would be great to save only changed fields
-  const { mutate: handleSave } = useSaveWord(wordId);
+  const [handleSave, { loading: isSaving }] = useSaveWord(wordId);
+
+  const onFinish = useCallback(
+    (values: Partial<IWord>) => {
+      void handleSave({ variables: { dto: values } });
+    },
+    [handleSave],
+  );
+
   return (
-    <Card className='full-width full-height scroll-y' loading={isFetching}>
+    <Card className='full-width full-height scroll-y' loading={loading}>
       {initialName || isNew ? (
         <Form
           className='full-width'
-          disabled={isFetching}
+          disabled={loading || isSaving}
           form={form}
           initialValues={initialValues}
           layout='vertical'
-          onFinish={handleSave}
+          onFinish={onFinish}
           size='large'
           validateTrigger='onSubmit'
         >

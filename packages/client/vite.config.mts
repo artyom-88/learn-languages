@@ -27,7 +27,6 @@ export default defineConfig(({ mode }): UserConfig => {
     },
     server: {
       host: host,
-      https: true,
       port: port,
     },
     build: {
@@ -35,7 +34,7 @@ export default defineConfig(({ mode }): UserConfig => {
         output: {
           manualChunks: {
             antd: ['antd', '@ant-design/icons'],
-            vendors: ['react', 'react-dom', 'react-router-dom', '@tanstack/react-query', 'ky', 'yup', 'zustand'],
+            vendors: ['react', 'react-dom', 'react-router-dom', 'ky', 'zustand'],
           },
         },
       },

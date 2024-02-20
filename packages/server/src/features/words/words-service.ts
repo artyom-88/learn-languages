@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { ConflictException, Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 
@@ -18,8 +18,12 @@ export class WordsService {
     return this.returnIfExists(id, word);
   }
 
-  create(dto: CreateWordDto): Promise<Word> {
-    // TODO: check if word already exists
+  async create(dto: CreateWordDto): Promise<Word> {
+    const { name } = dto;
+    const word = await this.wordModel.findOne({ name: name }).exec();
+    if (word) {
+      throw new ConflictException(`A word with name: "${name}" already exists`);
+    }
     return this.wordModel.create(dto);
   }
 
@@ -29,7 +33,7 @@ export class WordsService {
   }
 
   async delete(id: string): Promise<Word> {
-    const word = await this.wordModel.findByIdAndRemove(id).exec();
+    const word = await this.wordModel.findByIdAndDelete(id).exec();
     return this.returnIfExists(id, word);
   }
 
