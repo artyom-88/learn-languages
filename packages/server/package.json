@@ -21,7 +21,7 @@
     "update": "pnpm dlx npm-check -u -E -s"
   },
   "dependencies": {
-    "@apollo/server": "4.10.0",
+    "@apollo/server": "4.10.1",
     "@as-integrations/fastify": "2.1.1",
     "@learn-languages/common": "workspace:^",
     "@nestjs/apollo": "12.1.0",
