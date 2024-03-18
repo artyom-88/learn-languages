@@ -31,7 +31,7 @@
     "@nestjs/graphql": "12.1.1",
     "@nestjs/mapped-types": "2.0.5",
     "@nestjs/mongoose": "10.0.4",
-    "@nestjs/platform-fastify": "10.3.3",
+    "@nestjs/platform-fastify": "10.3.4",
     "@nestjs/serve-static": "4.0.1",
     "graphql-subscriptions": "2.0.0",
     "graphql-ws": "5.15.0",
