@@ -109,8 +109,8 @@ importers:
         specifier: 5.3.6
         version: 5.3.6(react-dom@18.2.0)(react@18.2.0)
       '@apollo/client':
-        specifier: 3.9.7
-        version: 3.9.7(@types/react@18.2.74)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+        specifier: 3.9.10
+        version: 3.9.10(@types/react@18.2.74)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@fontsource/roboto':
         specifier: 5.0.12
         version: 5.0.12
@@ -445,8 +445,8 @@ packages:
       graphql: 16.8.1
     dev: false
 
-  /@apollo/client@3.9.7(@types/react@18.2.74)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-OEEwt55bkFhqihCT5d75KUxZt50JZ9MuIYwG7VZlyPPIAb9K+qzVWlXWlf3tB5DaV43yXkUSLQfNpdIBFOB55Q==}
+  /@apollo/client@3.9.10(@types/react@18.2.74)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-w8i/Lk1P0vvWZF0Xb00XPonn79/0rgRJ1vopBlVudVuy9QP29/NZXK0rI2xJIN6VrKuEqJZaVGJC+7k23I2sfA==}
     peerDependencies:
       graphql: ^15.0.0 || ^16.0.0
       graphql-ws: ^5.5.5
