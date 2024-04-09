@@ -256,8 +256,8 @@ importers:
         specifier: 10.3.5
         version: 10.3.5(@fastify/static@7.0.1)(@nestjs/common@10.3.3)(@nestjs/core@10.3.7)
       '@nestjs/serve-static':
-        specifier: 4.0.1
-        version: 4.0.1(@fastify/static@7.0.1)(@nestjs/common@10.3.3)(@nestjs/core@10.3.7)(fastify@4.26.2)
+        specifier: 4.0.2
+        version: 4.0.2(@fastify/static@7.0.1)(@nestjs/common@10.3.3)(@nestjs/core@10.3.7)(fastify@4.26.2)
       graphql-subscriptions:
         specifier: 2.0.0
         version: 2.0.0(graphql@16.8.1)
@@ -2405,8 +2405,8 @@ packages:
       - chokidar
     dev: true
 
-  /@nestjs/serve-static@4.0.1(@fastify/static@7.0.1)(@nestjs/common@10.3.3)(@nestjs/core@10.3.7)(fastify@4.26.2):
-    resolution: {integrity: sha512-AoOrVdAe+WmsceuCcA8nWmKUYmaOsg9pqBCbIj7PS4W3XdikJQMtfxgSIoOlyUksZdhTBFjHqKh0Yhpj6pulwQ==}
+  /@nestjs/serve-static@4.0.2(@fastify/static@7.0.1)(@nestjs/common@10.3.3)(@nestjs/core@10.3.7)(fastify@4.26.2):
+    resolution: {integrity: sha512-cT0vdWN5ar7jDI2NKbhf4LcwJzU4vS5sVpMkVrHuyLcltbrz6JdGi1TfIMMatP2pNiq5Ie/uUdPSFDVaZX/URQ==}
     peerDependencies:
       '@fastify/static': 7.0.1
       '@nestjs/common': ^9.0.0 || ^10.0.0
