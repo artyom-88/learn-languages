@@ -45,8 +45,8 @@ importers:
         specifier: 20.12.2
         version: 20.12.2
       '@types/react':
-        specifier: 18.2.74
-        version: 18.2.74
+        specifier: 18.2.78
+        version: 18.2.78
       '@typescript-eslint/eslint-plugin':
         specifier: 6.21.0
         version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.4.2)
@@ -112,7 +112,7 @@ importers:
         version: 5.3.6(react-dom@18.2.0)(react@18.2.0)
       '@apollo/client':
         specifier: 3.9.10
-        version: 3.9.10(@types/react@18.2.74)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+        version: 3.9.10(@types/react@18.2.78)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
       '@fontsource/roboto':
         specifier: 5.0.12
         version: 5.0.12
@@ -136,7 +136,7 @@ importers:
         version: 6.22.3(react-dom@18.2.0)(react@18.2.0)
       zustand:
         specifier: 4.5.2
-        version: 4.5.2(@types/react@18.2.74)(react@18.2.0)
+        version: 4.5.2(@types/react@18.2.78)(react@18.2.0)
     devDependencies:
       '@learn-languages/eslint-common':
         specifier: workspace:^
@@ -447,7 +447,7 @@ packages:
       graphql: 16.8.1
     dev: false
 
-  /@apollo/client@3.9.10(@types/react@18.2.74)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0):
+  /@apollo/client@3.9.10(@types/react@18.2.78)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-w8i/Lk1P0vvWZF0Xb00XPonn79/0rgRJ1vopBlVudVuy9QP29/NZXK0rI2xJIN6VrKuEqJZaVGJC+7k23I2sfA==}
     peerDependencies:
       graphql: ^15.0.0 || ^16.0.0
@@ -476,7 +476,7 @@ packages:
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      rehackt: 0.0.6(@types/react@18.2.74)(react@18.2.0)
+      rehackt: 0.0.6(@types/react@18.2.78)(react@18.2.0)
       response-iterator: 0.2.6
       symbol-observable: 4.0.0
       ts-invariant: 0.10.3
@@ -3555,6 +3555,13 @@ packages:
 
   /@types/react@18.2.74:
     resolution: {integrity: sha512-9AEqNZZyBx8OdZpxzQlaFEVCSFUM2YXJH46yPOiOpm078k6ZLOCcuAzGum/zK8YBwY+dbahVNbHrbgrAwIRlqw==}
+    dependencies:
+      '@types/prop-types': 15.7.9
+      csstype: 3.1.3
+    dev: true
+
+  /@types/react@18.2.78:
+    resolution: {integrity: sha512-qOwdPnnitQY4xKlKayt42q5W5UQrSHjgoXNVEtxeqdITJ99k4VXJOP3vt8Rkm9HmgJpH50UNU+rlqfkfWOqp0A==}
     dependencies:
       '@types/prop-types': 15.7.9
       csstype: 3.1.3
@@ -11625,7 +11632,7 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /rehackt@0.0.6(@types/react@18.2.74)(react@18.2.0):
+  /rehackt@0.0.6(@types/react@18.2.78)(react@18.2.0):
     resolution: {integrity: sha512-l3WEzkt4ntlEc/IB3/mF6SRgNHA6zfQR7BlGOgBTOmx7IJJXojDASav+NsgXHFjHn+6RmwqsGPFgZpabWpeOdw==}
     peerDependencies:
       '@types/react': '*'
@@ -11636,7 +11643,7 @@ packages:
       react:
         optional: true
     dependencies:
-      '@types/react': 18.2.74
+      '@types/react': 18.2.78
       react: 18.2.0
     dev: false
 
@@ -13841,7 +13848,7 @@ packages:
     resolution: {integrity: sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==}
     dev: false
 
-  /zustand@4.5.2(@types/react@18.2.74)(react@18.2.0):
+  /zustand@4.5.2(@types/react@18.2.78)(react@18.2.0):
     resolution: {integrity: sha512-2cN1tPkDVkwCy5ickKrI7vijSjPksFRfqS6237NzT0vqSsztTNnQdHw9mmN7uBdk3gceVXU0a+21jFzFzAc9+g==}
     engines: {node: '>=12.7.0'}
     peerDependencies:
@@ -13856,7 +13863,7 @@ packages:
       react:
         optional: true
     dependencies:
-      '@types/react': 18.2.74
+      '@types/react': 18.2.78
       react: 18.2.0
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
