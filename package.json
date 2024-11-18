@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "20.x",
-    "pnpm": "8.x"
+    "node": "22.x",
+    "pnpm": "9.x"
   },
+  "packageManager": "pnpm@9.13.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/artyom-88/learn-languages.git"
@@ -19,7 +20,7 @@
     "lint": "lerna run --parallel lint",
     "lint:fix": "lerna run --parallel lint:fix",
     "pre-commit": "lint-staged",
-    "prepare": "husky install",
+    "prepare": "husky",
     "client:start": "pnpm --filter client start",
     "client:start:debug": "pnpm --filter client start:debug",
     "server:start": "pnpm --filter server start",
@@ -58,9 +59,8 @@
     "lint-staged": "15.2.2",
     "prettier": "3.2.5",
     "rimraf": "5.0.5",
-    "rollup": "4.12.0",
     "typescript": "5.4.2",
-    "vite": "5.2.8"
+    "vite": "5.4.11"
   },
   "pnpm": {
     "overrides": {
@@ -71,8 +71,7 @@
       "follow-redirects": ">=1.15.6",
       "ip": ">2.0.0",
       "lerna": "$lerna",
-      "react": "$react",
-      "rollup": "$rollup"
+      "react": "$react"
     }
   },
   "lint-staged": {
