@@ -20,7 +20,7 @@
     "update": "pnpm dlx npm-check -u -E -s"
   },
   "dependencies": {
-    "@ant-design/icons": "5.3.6",
+    "@ant-design/icons": "5.6.1",
     "@apollo/client": "3.11.10",
     "@fontsource/roboto": "5.0.12",
     "@learn-languages/common": "workspace:^",
